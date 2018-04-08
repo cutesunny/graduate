@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+		
+a{
+	text-decoration: none;
+}
+		
+ul li {
+	list-style: none;
+}
+		
+body,html {
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+.cssh-erji-main{
+	margin-left: 4%;
+	margin-right: 4%;
+}
+.cssh-erji-top{
+	/*margin-top: 20px;*/
+	height: 100px;
+	/*border: 1px solid red;*/
+}
+.cssh-erji-top .col-lg-12{
+	height: 100px;
+	/*border: 1px solid green;*/
+}
+.cssh-erji-top .col-lg-12 h2{
+	text-align: center;
+	color: white;
+	line-height: 100px;
+	margin-top: -1px;
+}
+.cssh-erji-photo1{
+	/*height: 300px;*/
+	/*border: 1px solid red;*/
+}
+.cssh-erji-photo .col-lg-4{
+	height: 300px;
+	/*border: 1px solid white;*/
+}
+.cssh-erji-photo .col-lg-4 img{
+	height: 300px;
+	width: 100%;
+}
+.cssh-erji-photo2{
+	margin-top: 20px;
+	/*height: 300px;*/
+	/*border: 1px solid red;*/
+}
+.cssh-erji-photo3{
+	margin-top: 20px;
+	/*height: 300px;*/
+	/*border: 1px solid red;*/
+}
+.cssh-erji-photo4{
+	margin-top: 20px;
+	/*height: 300px;*/
+	/*border: 1px solid red;*/
+}

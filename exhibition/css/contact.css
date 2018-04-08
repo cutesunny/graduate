@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+		
+a{
+	text-decoration: none;
+}
+		
+ul li {
+	list-style: none;
+}
+		
+body,html {
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+.contact-main{
+	margin-left: 4%;
+	margin-right: 4%;
+}
+.contact-top{
+	margin-top: 20px;
+	/*height: 300px;*/
+	/*border: 1px solid red;*/
+}
+.contact-top .col-lg-12{
+	height: 300px;
+	/*border: 1px solid yellow;*/
+} 
+.contact-top .col-lg-12 img{
+	height: 300px;
+	width: 100%;
+}
+.contact-call{
+	height: auto;
+	/*border:1px solid white;*/
+	background-image: url(../img/contact-bg.jpg);
+	background-size: cover;
+	overflow: hidden;
+	/*border-radius: 20px;*/
+}
+.contact-call .col-lg-12{
+	height: 600px;
+	/*border: 1px solid white;*/
+}
+.contact-call-call {
+  	text-align: left;
+  	height: 550px;
+  	padding: 70px 0;
+  	/*border: 1px solid red;*/
+}
+.contact-call-call form {
+	/*margin-top: 20px;*/
+    text-align: center;
+}
+/*****************留言板*/
+.contact-call-call form ul li:last-child {
+  width: 100%;
+
+}
+#message{
+	height: 130px ;
+}
+.contact-call-call form li {
+  display: inline-block;
+  width: 32%;
+  margin-bottom: 30px;
+  text-align: left;
+  margin-left: 10px;
+}
+.contact-call-call form li input {
+  width: 95%;
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  height: 40px;
+}
+.contact-call-call label {
+	color: white; 
+   	display: block;
+}
+.contact-call-call .submit {
+  color: white;
+  background: royalblue;
+  padding: 10px 40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.contact-call-call .submit:hover {
+  opacity: 0.6;
+}
