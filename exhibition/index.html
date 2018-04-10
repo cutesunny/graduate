@@ -18,7 +18,8 @@
 		<link href="css/shop.css" rel="stylesheet" />
 		<link href="css/news.css" rel="stylesheet" />
 		<link href="css/contact.css" rel="stylesheet" />
-		<link rel="stylesheet" type="text/css" href="css/gonex-icons.css"/>
+		<link rel="stylesheet" type="text/css" href="css/gonex-icons.css" />
+		<link href="css/login.css" rel="stylesheet" />
 		<!--HTML5 shim和Respond.js为了使得ie8更好的支持html5元素和媒体展示-->
 		<!--警告:Respond.js 当你使用file://这种访问时候是不支持的，支持http://访问模式-->
 		<!--[if it IE9]>
@@ -74,25 +75,59 @@
 					<div class="inner">
 						<h2>书画网</h2>
 						<p>
-						<form class="navbar-form navbar-collapse">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="想欣赏什么作品呢">
-							</div>
-							<button type="submit" class="btn btn-default">搜索</button>
-						</form>
-						<div class="collapse navbar-collapse" id="bs"></div>
+							<form class="navbar-form navbar-collapse">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="想欣赏什么作品呢">
+								</div>
+								<button type="submit" class="btn btn-default">搜索</button>
+							</form>
+							<div class="collapse navbar-collapse" id="bs"></div>
 						</p>
 						<p>you can share<br /> you can remark<br /> you can shopping</p>
 						<p>
-						<ul>
-							<li>
-								<a href="#">登录</a>
-							</li>
-							<li>
-								<a href="#">注册</a>
-							</li>
-						</ul>
+							<ul>
+								<li>
+									<a href="#" onclick="login();">登录</a>
+								</li>
+								<li>
+									<a href="#">注册</a>
+								</li>
+							</ul>
 						</p>
+					</div>
+					<div class="login" id="login">
+						<div class="log-in">
+							<div class="close-login" onclick="closelogin();">
+								<a href="#">X</a>
+							</div>
+							<div class="log-in-top">
+								<h2>欢迎来到书画网！</h2>
+							</div>
+							<form action="#" method="post">
+								<ul>
+									<li>
+										<label for="username">用户名：</label>
+										<input type="text" name="username" value="用户名" maxlength="20" onfocus="if (this.value=='用户名')  this.value='';" style="width: 50%;outline: none;
+  	            								border: none;background: rgba(255, 255, 255, 0.5);height: 95%;" />
+									</li>
+									<li>
+										<label for="password">密&nbsp;&nbsp;&nbsp;码：</label>
+										<input type="password" name="password" value="密码" maxlength="20" onfocus="if (this.value=='密码')  this.value='';" style="width: 50%;outline: none;
+  	            								border: none;background: rgba(255, 255, 255, 0.5);height: 95%;" />
+									</li>
+									<li>
+										<input type="checkbox" name="zlogin" value="1">自动登录
+									</li>
+									<li>
+										<input type="submit" name="login" value="登录" style="width: 25%;height: 100%;
+												border: none;background: dodgerblue;" onClick="return validateLogin()" />
+										<input type="button" name="button" value="注册" style="width: 25%;height: 100%;
+												border: none;background: dodgerblue;margin-left: 20%;" onclick="location.href='#'">
+									</li>
+								</ul>
+							</form>
+						</div>
+
 					</div>
 					<a href="#one" class="more scrolly" style="color: white;">Know More</a>
 				</section>
@@ -387,8 +422,8 @@
 										</div>
 									</div>
 								</div>
-							</div>	
-							<div class="col-lg-6">	
+							</div>
+							<div class="col-lg-6">
 								<div class="index-part5-top-right">
 									<div class="index-part5-top-right-1">
 										<div class="index-part5-top-right-11">
@@ -436,31 +471,31 @@
 									<form action="#" method="post" id="call-server">
 										<ul>
 											<li>
-												<label for="username">姓名</label>
+												<label for="username">用户名：</label>
 												<input type="text" name="username" id="username" placeholder="请输入姓名" />
 											</li>
 											<li>
-												<label for="phonenumber">电话号码&nbsp;&nbsp;<span id="iphoneInfo"></span></label>
+												<label for="phonenumber">电话号码：&nbsp;&nbsp;<span id="iphoneInfo"></span></label>
 												<input type="text" name="phonenumber" id="phonenumber" onblur="haoma()" placeholder="请输入电话号码" />
 											</li>
 											<li>
-												<label for="email">邮箱&nbsp;&nbsp;<span id="emailInfo"></span></label>
+												<label for="email">邮箱：&nbsp;&nbsp;<span id="emailInfo"></span></label>
 												<input type="text" name="emailnumber" id="emailnumber" onblur="youxiang()" placeholder="请输入邮箱号码" />
 											</li>
 											<li>
-												<label for="kind">分类</label>
+												<label for="kind">分类：</label>
 												<input type="text" name="kind" id="kind" placeholder="请输入留言分类：建议\赞扬" />
 											</li>
 											<li>
-												<label for="identity">身份</label>
+												<label for="identity">身份：</label>
 												<input type="text" name="identity" id="identity" placeholder="请输入身份：专家\会员\游客" />
 											</li>
 											<li>
-												<label for="date">日期</label>
+												<label for="date">日期：</label>
 												<input type="text" name="date" id="date" placeholder="请输入日期" />
 											</li>
 											<li id="last">
-												<label for="message">留言</label>
+												<label for="message">留言：</label>
 												<input type="text" name="message" id="message" placeholder="欢迎留言，我们将提供更加优质的服务" />
 											</li>
 										</ul>
@@ -486,23 +521,41 @@
 								<div class="footer-page1">
 									<h3>关于我们</h3>
 									<ul class="footer-page1-1">
-										<li><a href="#">在这里，你可以share</a></li>
-										<li><a href="#">在这里，你可以remark</a>k</li>
-										<li><a href="#">在这里，你可以go shopping</a></li>
-										<li><a href="#">在这里，你可以learn</a></li>
-										<li><a href="#">在这里，你可以read</a></li>
+										<li>
+											<a href="#">在这里，你可以share</a>
+										</li>
+										<li>
+											<a href="#">在这里，你可以remark</a>k</li>
+										<li>
+											<a href="#">在这里，你可以go shopping</a>
+										</li>
+										<li>
+											<a href="#">在这里，你可以learn</a>
+										</li>
+										<li>
+											<a href="#">在这里，你可以read</a>
+										</li>
 									</ul>
-								</div>	
+								</div>
 							</div>
 							<div class="col-lg-4">
 								<div class="footer-page2">
-									<h3 >页面链接</h3>
+									<h3>页面链接</h3>
 									<ul class="footer-page2-1">
-										<li><a href="#">传世书画</a></li>
-										<li><a href="#">当代书画</a>k</li>
-										<li><a href="#">书画展览</a></li>
-										<li><a href="#">书画拍卖</a></li>
-										<li><a href="#">新闻资讯</a></li>
+										<li>
+											<a href="#">传世书画</a>
+										</li>
+										<li>
+											<a href="#">当代书画</a>k</li>
+										<li>
+											<a href="#">书画展览</a>
+										</li>
+										<li>
+											<a href="#">书画拍卖</a>
+										</li>
+										<li>
+											<a href="#">新闻资讯</a>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -510,9 +563,14 @@
 								<div class="footer-page3">
 									<h3>联系我们</h3>
 									<ul class="footer-page3-1">
-										<li><a href="#">电话：028-123456789</a></li>
-										<li><a href="#">手机：1234567890</a>k</li>
-										<li><a href="#">邮箱：1829978700@qq.com</a></li>
+										<li>
+											<a href="#">电话：028-123456789</a>
+										</li>
+										<li>
+											<a href="#">手机：1234567890</a>k</li>
+										<li>
+											<a href="#">邮箱：1829978700@qq.com</a>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -527,7 +585,7 @@
 									<a href="#" class="-dribbble"><span class="ico ico-dribbble" aria-hidden="true"></span></a>
 									<a href="#" class="-googleplus"><span class="ico ico-google-plus" aria-hidden="true"></span></a>
 									<a href="#" class="-youtube"><span class="ico ico-youtube" aria-hidden="true"></span></a>
-								</div>	
+								</div>
 							</div>
 						</div>
 					</div>
@@ -537,7 +595,7 @@
 								<p>© 2018 - All Rights Reserved. 书画网</p>
 							</div>
 						</div>
-					</div>	
+					</div>
 				</div>
 			</div>
 		</div>
@@ -551,6 +609,17 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/util.js"></script>
 		<script src="js/main.js"></script>
+		<script>
+			var a = document.getElementById('login');
+
+			function login() {
+				a.style.display = "block";
+			}
+
+			function closelogin() {
+				document.getElementById('login').style.display = "none";
+			}
+		</script>
 	</body>
 
 </html>
