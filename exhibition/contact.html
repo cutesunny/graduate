@@ -57,144 +57,164 @@
 					</ul>
 				</nav>
 			</header>
-		</div>	
-			<div class="container-fluid">
-				<div class="contact-main">
-					<div class="contact-top">
-						<div class="row">
-							<div class="col-lg-12">
-								<img src="img/call us.jpg"/>
-							</div>
+		</div>
+		<div class="container-fluid">
+			<div class="contact-main">
+				<div class="contact-top">
+					<div class="row">
+						<div class="col-lg-12">
+							<img src="img/call us.jpg" />
 						</div>
 					</div>
-					<div class="contact-call">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="contact-call-call">
-									<form action="#" method="post" id="call-server">
-										<ul>
-											<li>
-												<label for="username">姓名</label>
-												<input type="text" name="username" id="username" placeholder="请输入姓名" />
-											</li>
-											<li>
-												<label for="phonenumber">电话号码&nbsp;&nbsp;<span id="iphoneInfo"></span></label>
-												<input type="text" name="phonenumber" id="phonenumber" onblur="haoma()" placeholder="请输入电话号码" />
-											</li>
-											<li>
-												<label for="email">邮箱&nbsp;&nbsp;<span id="emailInfo"></span></label>
-												<input type="text" name="emailnumber" id="emailnumber" onblur="youxiang()" placeholder="请输入邮箱号码" />
-											</li>
-											<li>
-												<label for="kind">分类</label>
-												<input type="text" name="kind" id="kind" placeholder="请输入留言分类：建议\赞扬" />
-											</li>
-											<li>
-												<label for="identity">身份</label>
-												<input type="text" name="identity" id="identity" placeholder="请输入身份：专家\会员\游客" />
-											</li>
-											<li>
-												<label for="date">日期</label>
-												<input type="text" name="date" id="date" placeholder="请输入日期" />
-											</li>
-											<li id="last">
-												<label for="message">留言</label>
-												<input type="text" name="message" id="message" placeholder="欢迎留言，我们将提供更加优质的服务" />
-											</li>
-										</ul>
-										<a class="submit" onclick="submit()">提交</a>
-									</form>
+				</div>
+				<div class="contact">
+					<div class="contactus">
+						<form>
+							<div class="contactus1">
+								<div class="row">
+									<div class="col-lg-4" id="style1">
+										<label for="username">用户名：</label>
+										<input type="text" name="username" id="username" required="required" placeholder="请输入姓名" />
+									</div>
+									<div class="col-lg-4" id="style1">
+										<label for="tel">电话号码：&nbsp;&nbsp;<span id="iphoneInfo"></span></label>
+										<input type="tel" name="tel" id="tel" onblur="phone()" placeholder="请输入电话号码" />
+									</div>
+									<div class="col-lg-4" id="style1">
+										<label for="email">邮箱：&nbsp;&nbsp;<span id="emailInfo"></span></label>
+										<input type="email" name="emailnumber" id="emailnumber" onblur="youxiang()" placeholder="请输入邮箱" />
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
+							<div class="contactus2">
+								<div class="row">
+									<div class="col-lg-4" id="style1">
+										<label for="suggest"><span>建议：</span>
+													<select name="id">
+												        <option value="">赞扬</option>
+												        <option value="">建议</option>
+												        <option value="">投诉</option>
+												    </select>
+												</label>
+										<input type="text" name="suggest" id="suggest" placeholder="请输入建议" />
+									</div>
+									<div class="col-lg-4">
+										<label for="identity">身份：</label><br />
+										<input type="radio" name="identity" required="required" style="height:15px;width:7%;" /><span style="font-size: 18px;">普通会员</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<input type="radio" name="identity" required="required" style="height:15px;width:7%;" /><span style="font-size: 18px;">资深专家</span>
+									</div>
+									<div class="col-lg-4" id="style1">
+										<label for="date">日期：</label>
+										<input type="date" name="date" id="date" placeholder="请选择日期" />
+									</div>
+								</div>
+							</div>
+							<div class="contactus3">
+								<div class="row">
+									<div class="col-lg-12">
 
-					<div class="footer">
-						<div class="footer-main">
-							<div class="row">
-								<div class="col-lg-4">
-									<div class="footer-page1">
-										<h3>关于我们</h3>
-										<ul class="footer-page1-1">
-											<li>
-												<a href="#">在这里，你可以share</a>
-											</li>
-											<li>
-												<a href="#">在这里，你可以remark</a>k</li>
-											<li>
-												<a href="#">在这里，你可以go shopping</a>
-											</li>
-											<li>
-												<a href="#">在这里，你可以learn</a>
-											</li>
-											<li>
-												<a href="#">在这里，你可以read</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-4">
-									<div class="footer-page2">
-										<h3>页面链接</h3>
-										<ul class="footer-page2-1">
-											<li>
-												<a href="#">传世书画</a>
-											</li>
-											<li>
-												<a href="#">当代书画</a>k</li>
-											<li>
-												<a href="#">书画展览</a>
-											</li>
-											<li>
-												<a href="#">书画拍卖</a>
-											</li>
-											<li>
-												<a href="#">新闻资讯</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-4">
-									<div class="footer-page3">
-										<h3>联系我们</h3>
-										<ul class="footer-page3-1">
-											<li>
-												<a href="#">电话：028-123456789</a>
-											</li>
-											<li>
-												<a href="#">手机：1234567890</a>k</li>
-											<li>
-												<a href="#">邮箱：1829978700@qq.com</a>
-											</li>
-										</ul>
+										<label for="message">留言：</label><br />
+										<textarea name="message" id="message" required="required" placeholder="欢迎留言，我们将提供更加优质的服务！"></textarea>
+
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="footer-img">
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="social-info">
-										<a href="#" class="-facebook"><span class="ico ico-facebook" aria-hidden="true"></span></a>
-										<a href="#" class="-twitter"><span class="ico ico-twitter" aria-hidden="true"></span></a>
-										<a href="#" class="-dribbble"><span class="ico ico-dribbble" aria-hidden="true"></span></a>
-										<a href="#" class="-googleplus"><span class="ico ico-google-plus" aria-hidden="true"></span></a>
-										<a href="#" class="-youtube"><span class="ico ico-youtube" aria-hidden="true"></span></a>
+							<div class="contactus4">
+								<div class="row">
+									<div class="col-lg-12">
+										<input type="submit" value="提交" />
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="footer-copyright">
-							<div class="row">
-								<div class="col-lg-12">
-									<p>© 2018 - All Rights Reserved. 书画网</p>
+						</form>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="footer-main">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="footer-page1">
+									<h3>关于我们</h3>
+									<ul class="footer-page1-1">
+										<li>
+											<a href="#">在这里，你可以share</a>
+										</li>
+										<li>
+											<a href="#">在这里，你可以remark</a>k</li>
+										<li>
+											<a href="#">在这里，你可以go shopping</a>
+										</li>
+										<li>
+											<a href="#">在这里，你可以learn</a>
+										</li>
+										<li>
+											<a href="#">在这里，你可以read</a>
+										</li>
+									</ul>
 								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="footer-page2">
+									<h3>页面链接</h3>
+									<ul class="footer-page2-1">
+										<li>
+											<a href="#">传世书画</a>
+										</li>
+										<li>
+											<a href="#">当代书画</a>k</li>
+										<li>
+											<a href="#">书画展览</a>
+										</li>
+										<li>
+											<a href="#">书画拍卖</a>
+										</li>
+										<li>
+											<a href="#">新闻资讯</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="footer-page3">
+									<h3>联系我们</h3>
+									<ul class="footer-page3-1">
+										<li>
+											<a href="#">电话：028-123456789</a>
+										</li>
+										<li>
+											<a href="#">手机：1234567890</a>k</li>
+										<li>
+											<a href="#">邮箱：1829978700@qq.com</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-img">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="social-info">
+									<a href="#" class="-facebook"><span class="ico ico-facebook" aria-hidden="true"></span></a>
+									<a href="#" class="-twitter"><span class="ico ico-twitter" aria-hidden="true"></span></a>
+									<a href="#" class="-dribbble"><span class="ico ico-dribbble" aria-hidden="true"></span></a>
+									<a href="#" class="-googleplus"><span class="ico ico-google-plus" aria-hidden="true"></span></a>
+									<a href="#" class="-youtube"><span class="ico ico-youtube" aria-hidden="true"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-copyright">
+						<div class="row">
+							<div class="col-lg-12">
+								<p>© 2018 - All Rights Reserved. 书画网</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		
+		</div>
+
 		<!--jQuery  使用bootstrap插件必须引入jQuery-->
 		<script src="js/jquery.min.js"></script>
 		<!--使用bootstrap插件必须引入-->

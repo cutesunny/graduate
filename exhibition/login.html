@@ -75,3 +75,58 @@
 	</body>
 
 </html>
+<div class="row">
+							<div class="col-lg-12">
+								<div class="index-part6-main-call">
+									<form action="#" method="post" id="call-server">
+										<div class="message-top">
+										<ul>
+											<div class="message1">
+											<li>
+												<label for="username">用户名：</label>
+												<input type="text" name="username" id="username" placeholder="请输入姓名" />
+											</li>
+											<li>
+												<label for="tel">电话号码：&nbsp;&nbsp;<span id="iphoneInfo"></span></label>
+												<input type="tel" name="tel" id="tel" onblur="phone()" placeholder="请输入电话号码" />
+											</li>
+											<li>
+												<label for="email">邮箱：&nbsp;&nbsp;<span id="emailInfo"></span></label>
+												<input type="email" name="emailnumber" id="emailnumber" onblur="youxiang()" placeholder="请输入邮箱" />
+											</li>
+											<li>
+												<label for="suggest"><span>建议：</span>
+													<select name="id">
+												        <option value="">赞扬</option>
+												        <option value="">建议</option>
+												        <option value="">投诉</option>
+												    </select>
+												</label>
+												<input type="text" name="suggest" id="suggest" placeholder="请输入建议" />
+											</li>
+											</div>
+											<div class="identity">
+											<li>
+												<label for="identity">身份：</label>
+												<input type="radio" name="identity"/><span>普通会员</span>&nbsp;&nbsp;&nbsp;&nbsp;
+	    										<input type="radio" name="identity" required="required"/><span>资深专家</span>
+											</li>
+											</div>
+											<div class="message1">
+											<li style="margin-top: 5px;">
+												<label for="date">日期：</label>
+												<input type="date" name="date" id="date" placeholder="请选择日期" />
+											</li>
+											</div>
+											</ul>
+											</div>
+											<div class="message">
+												<label for="message">留言：</label>
+												<textarea name="message" id="message" placeholder="欢迎留言，我们将提供更加优质的服务！"></textarea>
+											</div>
+										
+										<a class="submit" onclick="submit()">提交</a>
+									</form>
+								</div>
+							</div>
+						</div>

@@ -95,75 +95,81 @@
 							</ul>
 						</p>
 					</div>
-						<div class="login" id="login">
-							<div class="log-in">
-								<div class="close-login" onclick="closelogin();">
-									<div class="exit">
-										<a href="#">X</a>
-									</div>
+					<div class="login" id="login">
+						<div class="log-in">
+							<div class="close-login" onclick="closelogin();">
+								<div class="exit">
+									<a href="#">X</a>
 								</div>
-								<div class="login-main">
-									<form action="#" method="post">
-										<h2>书画网</h2>
-										<div class="log">
-											<input type="text" name="name" class="name" placeholder="&nbsp;用户名" required="">
-											<input type="password" name="password" class="password" placeholder=" &nbsp;密码" required="">
-										</div>
-										<label class="checkbox">
+							</div>
+							<div class="login-main">
+								<form action="#" method="post">
+									<h2>书画网</h2>
+									<div class="log">
+										<input type="text" name="name" class="name" placeholder="&nbsp;用户名" required="">
+										<input type="password" name="password" class="password" placeholder=" &nbsp;密码" required="">
+									</div>
+									<label class="checkbox">
 											<input type="checkbox" value="remember me" />
 											记住密码&nbsp;&nbsp;|<a href="#">&nbsp;&nbsp;忘记密码?</a>
 										</label>
-										<div class="log-bt">
-											<input type="submit" value="登录">
-											<input type="submit" value="注册" style="margin-left: 30px;">
-										</div>
-									</form>
-								</div>
-								<div class="login-1">
+									<div class="log-bt">
+										<input type="submit" value="登录">
+										<input type="submit" value="注册" style="margin-left: 30px;">
+									</div>
+								</form>
+							</div>
+							<div class="login-1">
 
-									<span>第三方登录</span>
+								<span>第三方登录</span>
 
-								</div>
-								<div class="login-2">
+							</div>
+							<div class="login-2">
 
-									<a href="#">
-										<img src="img/qq.jpg" />
-										<img src="img/wx.jpg" />
-										<img src="img/wb.jpg" />
-									</a>
+								<a href="#">
+									<img src="img/qq.jpg" />
+									<img src="img/wx.jpg" />
+									<img src="img/wb.jpg" />
+								</a>
 
-								</div>
 							</div>
 						</div>
-						<div class="register" id="register">
-							<div class="regist">
-								<div class="close-register" onclick="closeregister();">
-									<div class="exit">
-										<a href="#">X</a>
+					</div>
+					<div class="register" id="register">
+						<div class="regist">
+							<div class="close-register" onclick="closeregister();">
+								<div class="exit">
+									<a href="#">X</a>
+								</div>
+							</div>
+							<div class="register-main">
+								<form action="#" method="post">
+									<h2>书画网</h2>
+									<div class="regist1">
+										<label for="username"><span>用户名：</span></label>
+										<input type="text" name="name" class="name" placeholder="&nbsp;用户名" required="">
+										<label for="password"><span>密码：</span></label>
+										<input type="password" name="password" class="password" placeholder=" &nbsp;密码" required="">
+										<label for="password"><span>确认密码：</span></label>
+										<input type="password" name="password" class="password" placeholder=" &nbsp;密码" required="">
+										<label for="email"><span>邮箱：</span></label>
+										<input type="email" name="email" class="email" placeholder=" &nbsp;邮箱" required="">
+										<label for="tel"><span>电话：</span></label>
+										<input type="tel" name="tel" class="tel" placeholder=" &nbsp;电话" required="">
 									</div>
-								</div>
-								<div class="register-main">
-									<form action="#" method="post">
-										<h2>书画网</h2>
-										<div class="regist1">
-											<label for="username"><span>用户名：</span></label>
-											<input type="text" name="name" class="name" placeholder="&nbsp;用户名" required="">
-											<label for="password"><span>密码：</span></label>
-											<input type="password" name="password" class="password" placeholder=" &nbsp;密码" required="">
-											<!--<label for="password"><span>确认密码：</span></label>
-											<input type="password" name="password" class="password" placeholder=" &nbsp;密码" required="">-->
-											<label for="email"><span>邮箱：</span></label>
-											<input type="email" name="email" class="email" placeholder=" &nbsp;邮箱" required="">
-											<label for="tel"><span>电话：</span></label>
-											<input type="tel" name="tel" class="tel" placeholder=" &nbsp;电话" required="">
-										<div class="register-bt">
-											<input type="submit" value="注册">
-										</div>
-									</form>
-								</div>
-								</div>
-								</div>
-								</div>
+									<label for="identity" class="identity"><span>会员类型：</span>
+												<input type="radio" name="identity"/><span>普通会员</span>
+	    										<input type="radio" name="identity" required="required"/><span>资深专家</span>
+											</label>
+									<div class="register-bt">
+										<input type="submit" value="注册">
+										<input type="submit" value="专家认证">
+									</div>
+								</form>
+
+							</div>
+						</div>
+					</div>
 					<a href="#one" class="more scrolly" style="color: white;">Know More</a>
 				</section>
 			</div>
@@ -490,7 +496,7 @@
 						</div>
 					</div>
 				</div>
-				<hr />
+
 				<div class="index-part6">
 					<div class="index-part1-title">
 						<div class="row">
@@ -499,46 +505,66 @@
 							</div>
 						</div>
 					</div>
-					<div class="index-part6-main">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="index-part6-main-call">
-									<form action="#" method="post" id="call-server">
-										<ul>
-											<li>
-												<label for="username">用户名：</label>
-												<input type="text" name="username" id="username" placeholder="请输入姓名" />
-											</li>
-											<li>
-												<label for="phonenumber">电话号码：&nbsp;&nbsp;<span id="iphoneInfo"></span></label>
-												<input type="text" name="phonenumber" id="phonenumber" onblur="haoma()" placeholder="请输入电话号码" />
-											</li>
-											<li>
-												<label for="email">邮箱：&nbsp;&nbsp;<span id="emailInfo"></span></label>
-												<input type="text" name="emailnumber" id="emailnumber" onblur="youxiang()" placeholder="请输入邮箱号码" />
-											</li>
-											<li>
-												<label for="kind">分类：</label>
-												<input type="text" name="kind" id="kind" placeholder="请输入留言分类：建议\赞扬" />
-											</li>
-											<li>
-												<label for="identity">身份：</label>
-												<input type="text" name="identity" id="identity" placeholder="请输入身份：专家\会员\游客" />
-											</li>
-											<li>
-												<label for="date">日期：</label>
-												<input type="text" name="date" id="date" placeholder="请输入日期" />
-											</li>
-											<li id="last">
-												<label for="message">留言：</label>
-												<input type="text" name="message" id="message" placeholder="欢迎留言，我们将提供更加优质的服务" />
-											</li>
-										</ul>
-										<a class="submit" onclick="submit()">提交</a>
-									</form>
+					<div class="callus">
+						<form>
+							<div class="callus1">
+								<div class="row">
+									<div class="col-lg-4" id="style">
+										<label for="username">用户名：</label>
+										<input type="text" name="username" id="username" required="required" placeholder="请输入姓名" />
+									</div>
+									<div class="col-lg-4" id="style">
+										<label for="tel">电话号码：&nbsp;&nbsp;<span id="iphoneInfo"></span></label>
+										<input type="tel" name="tel" id="tel" onblur="phone()" placeholder="请输入电话号码" />
+									</div>
+									<div class="col-lg-4" id="style">
+										<label for="email">邮箱：&nbsp;&nbsp;<span id="emailInfo"></span></label>
+										<input type="email" name="emailnumber" id="emailnumber" onblur="youxiang()" placeholder="请输入邮箱" />
+									</div>
 								</div>
 							</div>
-						</div>
+							<div class="callus2">
+								<div class="row">
+									<div class="col-lg-4" id="style">
+										<label for="suggest"><span>建议：</span>
+													<select name="id">
+												        <option value="">赞扬</option>
+												        <option value="">建议</option>
+												        <option value="">投诉</option>
+												    </select>
+												</label>
+										<input type="text" name="suggest" id="suggest" placeholder="请输入建议" />
+									</div>
+									<div class="col-lg-4">
+										<label for="identity">身份：</label><br />
+										<input type="radio" name="identity" required="required" style="height:15px;width:7%;" /><span style="font-size: 18px;">普通会员</span>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<input type="radio" name="identity" required="required" style="height:15px;width:7%;"  /><span style="font-size: 18px;">资深专家</span>
+									</div>
+									<div class="col-lg-4" id="style">
+										<label for="date">日期：</label>
+										<input type="date" name="date" id="date" placeholder="请选择日期" />
+									</div>
+								</div>
+							</div>
+							<div class="callus3">
+								<div class="row">
+									<div class="col-lg-12">
+										
+												<label for="message">留言：</label><br />
+												<textarea name="message" id="message" required="required"  placeholder="欢迎留言，我们将提供更加优质的服务！"></textarea>
+											
+									</div>
+								</div>
+							</div>
+							<div class="callus4">
+								<div class="row">
+									<div class="col-lg-12">
+										<input type="submit" value="提交"/>
+									</div>
+								</div>
+							</div>
+						</form>
 					</div>
 					<div class="index-part1-more">
 						<div class="row">
@@ -548,7 +574,7 @@
 						</div>
 					</div>
 				</div>
-				<hr />
+				<!--<hr />-->
 				<div class="footer">
 					<div class="footer-main">
 						<div class="row">
