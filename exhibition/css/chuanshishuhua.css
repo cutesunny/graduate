@@ -97,6 +97,10 @@ body,html {
 	height: 100px;
 	/*border: 1px solid red;*/
 }
+.cssh-show1-title .col-lg-12 a{
+	text-decoration: none;
+	display: block;
+}
 .cssh-show1-title .col-lg-12 h2{
 	text-align: center;
 	line-height: 100px;

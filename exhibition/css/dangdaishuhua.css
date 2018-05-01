@@ -85,6 +85,11 @@ body,html {
 	height: 200px;
 	/*border: 1px solid green;*/
 }
+.ddsh-middle-bottom .title a {
+	text-decoration: none;
+	display: block;
+	color: white;
+	}
 .ddsh-middle-bottom h3{
 	text-align: center;
 	color: white;
@@ -97,7 +102,7 @@ body,html {
 	margin-top: 20px;
 }
 
-.ddsh-middle-bottom a{
+.ddsh-middle-bottom .remark a{
 	text-decoration: none;
 	display: block;
 	margin-top: -20px;

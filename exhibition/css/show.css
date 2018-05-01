@@ -19,6 +19,10 @@ body,html {
 	margin-left: 4%;
 	margin-right: 4%;
 }
+.show-main hr{
+	color: beige;
+	margin-top: -20px;
+}
            /*top*/
 .show-top{
 	margin-top: 20px;
@@ -62,29 +66,25 @@ body,html {
 	height:100px;
 	/*border:1px solid red;*/
 }
-.show1-col-lg-12-1{
+.show-1 .col-lg-12 .more{
+	height: 100px;
+	border-bottom: 1px solid beige;
+}
+.show-1 .col-lg-12 a{
+	text-decoration: none;
+	display: block;
+	color: beige;
+	text-align: center;
+	line-height: 100px;
+	font-size: 25px;
+}
+.show1-col-lg-12{
 	float: left;
 	margin-top: 20px;
 }
-.show1-col-lg-12-1 h2{
+.show1-col-lg-12 h2{
 	color: white;
 	margin-left: 20px;
-}
-.show1-col-lg-12-2{
-	height:30px; 
-	width:60px;
-	float:left;
-	margin-left: 990px;
-	margin-top: 60px;
-	background: gainsboro;
-	border-radius: 10px;
-}
-.show1-col-lg-12-2 a{
-	text-decoration: none;
-	display: block;
-	text-align: center;
-	line-height: 30px;
-	color: black;
 }
 .show-1 .col-lg-4{
 	height:400px;
@@ -95,7 +95,7 @@ body,html {
 	width:382px;
 }   
 .show-2{
-	height:800px;
+	height:900px;
 	/*border:1px solid yellow;*/
 } 
 .show-2 .col-lg-12{
@@ -108,7 +108,7 @@ body,html {
 }
 .show-2 .col-lg-8 img{
 	height:400px;
-	width:810px;
+	width:800px;
 }
 .show-gallery-top .col-lg-4{
 	height:400px;
@@ -116,7 +116,7 @@ body,html {
 }
 .show-2 .col-lg-4 img{
 	height:400px;
-	width:382px;
+	width:385px;
 }
 .show-gallery-bottom{
 	margin-top: 10px;
@@ -127,7 +127,7 @@ body,html {
 }
 .show-gallery-bottom .col-lg-4 img{
 	height:300px;
-	width:382px
+	width:385px
 }
 .show-3{
 	height:500px;
