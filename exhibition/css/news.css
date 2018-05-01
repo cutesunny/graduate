@@ -102,6 +102,10 @@ body,html {
 	/*border:1px solid red;*/
 	float:left;
 }
+.news-main .col-lg-12-title a{
+    text-decoration: none;
+    display: block;
+}
 .news-main .col-lg-12-title h2{
 	line-height: 100px;
 	margin-top: -1px;
