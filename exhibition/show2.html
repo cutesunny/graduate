@@ -43,7 +43,7 @@
 		}
 		
 		.show2-main {
-			margin-left: 4%
+			margin-left: 4%;
 			margin-right: 4%;
 		}
 		
@@ -100,6 +100,40 @@
 			padding: 20px 15px;
 			line-height: 25px;
 			color: white;
+		}
+		.show2-details-remark{
+			height: 300px;
+			/*border: 1px solid white;*/
+		}
+		.show2-details-remark .col-lg-12{
+			height: 300px;
+			/*border: 1px solid red;*/
+		}
+		.show2-details-remark label{
+			color: white;
+			font-size: 30px;
+			font-family: "楷体";
+		}
+		.show2-details-remark textarea{
+			/*outline: none;
+ 		 	border: none;*/
+  			background: beige;
+  			height: 200px;
+			width: 100%;
+		}
+		.show2-details-remark .submit{
+			/*border: 1px solid red;*/
+			padding: 10px 60px;
+  			background: royalblue;
+  			text-decoration: none;
+  			display: block;
+  			cursor: pointer;
+  			margin-left: 990px;
+  			color: white;
+  			/*margin-top: 0px;*/
+		}
+		.show2-details-remark .submit:hover {
+  			opacity: 0.6;
 		}
 	</style>
 
@@ -167,6 +201,17 @@
 								而这同时也是整个全球化社会中在地性的一次重要展演和叙述。
 								</p>
 							</div>
+						</div>
+					</div>
+				</div>
+				<div class="show2-details-remark">
+					<div class="row">
+						<div class="col-lg-12">
+							<form action="#" method="post" id="comment">
+								<label for="comment">发表观点:</label>
+								<textarea name="comment"  placeholder="来说两句吧..."></textarea>
+								<a class="submit" onclick="submit()">畅言一下</a>
+							</form>
 						</div>
 					</div>
 				</div>

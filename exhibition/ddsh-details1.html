@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<!--使得i内核使用更高的渲染效果展示-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--设置支持移动端的视窗-->
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!--上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后-->
+		<title>模板</title>
+		<!--Bootsttap-->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/contact.css" rel="stylesheet" />
+		<link href="css/shop.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
+		<link href="css/chuanshishuhua.css" rel="stylesheet" />
+		<link href="css/dangdaishuhua.css" rel="stylesheet" />
+		<link href="css/show.css" rel="stylesheet" />
+		<link href="css/news.css" rel="stylesheet" />
+		<link href="css/gonex-icons.css" rel="stylesheet" />
+		<link href="css/cssh-erji.css" rel="stylesheet" />
+		<link href="css/remark.css" rel="stylesheet" />
+	</head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		a {
+			text-decoration: none;
+		}
+		
+		ul li {
+			list-style: none;
+		}
+		
+		body,
+		html {
+			font-size: 18px;
+			font-family: "微软雅黑";
+		}
+		
+		.ddsh-details1-main {
+			margin-left: 4%;
+			margin-right: 4%;
+		}
+		
+		.ddsh-details1-top {
+			height: 100px;
+			/*border: 1px solid red;*/
+		}
+		
+		.ddsh-details1-top .col-lg-12 {
+			height: 100px;
+			/*border: 1px solid white;*/
+		}
+		
+		.ddsh-details1-top .col-lg-12 h2 {
+			text-align: center;
+			line-height: 100px;
+			color: white;
+			margin-top: -1px;
+		}
+		.ddsh-details1-content{
+			/*height: 1600px;*/
+			/*border: 1px solid red;*/
+		}
+		.cssh-details1-content .col-lg-12{
+			height:1600px;
+			/*border: 1px solid white;*/
+		}
+		.ddsh-details1-content-top{
+			/*height: 1200px;*/
+			/*border: 1px solid red;*/
+		}
+		.ddsh-details1-content-top .ddsh1-1 img{
+			width: 70%;
+			height: 400px;
+			margin-left: 15%;
+			margin-top: 25px;
+		}
+		.ddsh-details1-content-top .ddsh1-2 img{
+			width: 50%;
+			height: 700px;
+			margin-left: 25%;
+			margin-top: 25px;
+		}
+		.ddsh-details1-content-top figcaption p{
+			color: white;
+			line-height:30px;
+			text-align: center;
+		}
+		.ddsh-details1-content-bottom{
+			/*height: 230px;*/
+			/*border: 1px solid green;*/
+		}
+		.ddsh-details1-content-bottom p{
+			/*padding: 10px 0;*/
+			margin: 10px 20px;
+			line-height: 25px;
+			color: white;
+		}
+		.ddsh-details1-remark{
+			height: 300px;
+			/*border: 1px solid white;*/
+		}
+		.ddsh-details1-remark .col-lg-12{
+			height: 300px;
+			/*border: 1px solid red;*/
+		}
+		.ddsh-details1-remark label{
+			color: white;
+			font-size: 30px;
+			font-family: "楷体";
+		}
+		.cssh-details1-remark textarea{
+			/*outline: none;
+ 		 	border: none;*/
+  			background: beige;
+  			height: 200px;
+			width: 100%;
+		}
+		.ddsh-details1-remark .submit{
+			/*border: 1px solid red;*/
+			padding: 10px 60px;
+  			background: royalblue;
+  			text-decoration: none;
+  			display: block;
+  			cursor: pointer;
+  			margin-left: 990px;
+  			color: white;
+  			/*margin-top: 0px;*/
+		}
+		.ddsh-details1-remark .submit:hover {
+  			opacity: 0.6;
+		}
+	</style>
+
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html">Spectral</a></h1>
+				<nav id="nav">
+					<ul>
+						<li class="special">
+							<a href="#menu" class="menuToggle"><span>Menu</span></a>
+							<div id="menu">
+								<ul>
+									<li>
+										<a href="index.html">首页</a>
+									</li>
+									<li>
+										<a href="chuanshishuhua.html">传世书画</a>
+									</li>
+									<li>
+										<a href="dangdaishuhua.html">当代书画</a>
+									</li>
+									<li>
+										<a href="show.html">书画展览</a>
+									</li>
+									<li>
+										<a href="shop.html">书画竞拍</a>
+									</li>
+									<li>
+										<a href="news.html">新闻资讯</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		<div class="container-fluid">
+			<div class="cssh-details1-main">
+				<div class="cssh-details1-top">
+					<div class="row">
+						<div class="col-lg-12">
+							<h2>徐悲鸿牧牛图</h2>
+						</div>
+					</div>
+				</div>
+				<div class="cssh-details1-content">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="cssh-details1-content-top">
+								<figure class="cssh1-1">
+									<img src="img/cssh-details1-1.jpg" alt="cssh-details1-1.jpg"/>
+									<figcaption>
+										<p>图一</p>
+									</figcaption>
+								</figure>
+								<figure class="cssh1-2">
+									<img src="img/cssh-details1-2.jpg" alt="cssh-details1-2.jpg"/>
+									<figcaption>
+										<p>图二</p>
+									</figcaption>
+								</figure>
+								
+							</div>
+							<div class="cssh-details1-content-bottom">
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;徐悲鸿（1895—1953），中国杰出的画家、美术教育家，巴黎国立美术专科学校毕业，
+									受教于法国著名画家达仰教授，达仰“勿慕时尚，毋甘小就”的现实绘画艺术思想，对徐悲鸿一生的影响很大。
+								</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图一所示是《牧牛图》。外面炮声正浓，硝烟弥漫。而此地则是风光旖旎，人畜和谐，毫无战场上的“刀光剑影”。牧童牵着倔强的耕牛，仿佛正向远处眺望着什么。从此画可看出，悲鸿先生创作时的心情还是相当愉快的，可能是远离了烽火炮声的喧嚣，有了片刻的安宁。“辛巳”是1941年，也正是抗日战争进行最为激烈的年月。落款“……于逸庐，隔夜残墨，用试新纸，颇得意外之欢，是可喜也。悲鸿”。画面“动中有静”，“静中藏动”。画家笔下最有画趣的笔墨是，一头区区倔强的老牛，就是疯狂兽行的倭寇，
+									都无法将它的浩然倔劲撼动。“静文爱妻保存”，画家的“保存”二字，既是一种信任，更是一种无私的大爱，令人感佩不已。
+								</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图二所示是《双鹤图》。1936年徐悲鸿离开南京到广西，居住在桂林、阳朔。在漓江边上创作了许多优秀的作品，还于1937年在香港、广州、长沙举办画展，以画展收入支持抗日救国。此幅《双鹤图》是1938年创作的，亦属广西时期的作品。在此画中徐悲鸿题道：“廿七年九月十八，倭机轰炸柳州，悲鸿正写此画未竟。”以画笔记录下日军的侵略行径，以及忧国忧民的心境。同时，他用遒劲的青松和独立长生的仙鹤，表达了画家祝福祖国和人民永葆常青、坚韧永生的美好愿望。值得特别留意的是徐悲鸿
+									常常把最珍贵和爱惜的作品赠送给妻子廖静文，以示对爱妻的情意，本幅作品即是，上题：“静文爱妻保存。”可见悲鸿先生对此画的珍视程度。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cssh-details1-remark">
+					<div class="row">
+						<div class="col-lg-12">
+							<form action="#" method="post" id="comment">
+								<label for="comment">发表观点:</label>
+								<textarea name="comment"  placeholder="来说两句吧..."></textarea>
+								<a class="submit" onclick="submit()">畅言一下</a>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="footer-main">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="footer-page1">
+									<h3>关于我们</h3>
+									<ul class="footer-page1-1">
+										<li>
+											<a href="#">在这里，你可以share</a>
+										</li>
+										<li>
+											<a href="#">在这里，你可以remark</a>k</li>
+										<li>
+											<a href="#">在这里，你可以go shopping</a>
+										</li>
+										<li>
+											<a href="#">在这里，你可以learn</a>
+										</li>
+										<li>
+											<a href="#">在这里，你可以read</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="footer-page2">
+									<h3>页面链接</h3>
+									<ul class="footer-page2-1">
+										<li>
+											<a href="#">传世书画</a>
+										</li>
+										<li>
+											<a href="#">当代书画</a>k</li>
+										<li>
+											<a href="#">书画展览</a>
+										</li>
+										<li>
+											<a href="#">书画拍卖</a>
+										</li>
+										<li>
+											<a href="#">新闻资讯</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="footer-page3">
+									<h3>联系我们</h3>
+									<ul class="footer-page3-1">
+										<li>
+											<a href="#">电话：028-123456789</a>
+										</li>
+										<li>
+											<a href="#">手机：1234567890</a>k</li>
+										<li>
+											<a href="#">邮箱：1829978700@qq.com</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-img">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="social-info">
+									<a href="#" class="-facebook"><span class="ico ico-facebook" aria-hidden="true"></span></a>
+									<a href="#" class="-twitter"><span class="ico ico-twitter" aria-hidden="true"></span></a>
+									<a href="#" class="-dribbble"><span class="ico ico-dribbble" aria-hidden="true"></span></a>
+									<a href="#" class="-googleplus"><span class="ico ico-google-plus" aria-hidden="true"></span></a>
+									<a href="#" class="-youtube"><span class="ico ico-youtube" aria-hidden="true"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-copyright">
+						<div class="row">
+							<div class="col-lg-12">
+								<p>© 2018 - All Rights Reserved. 书画网</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--jQuery  使用bootstrap插件必须引入jQuery-->
+		<script src="js/jquery.min.js"></script>
+		<!--使用bootstrap插件必须引入-->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.scrollex.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/util.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+
+</html>

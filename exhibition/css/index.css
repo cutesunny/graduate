@@ -651,7 +651,8 @@ body.landing #page-wrapper {
 	padding: 2em;
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 1.25em;
+	font-size: 1.3em;
+	line-height: 25px;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
@@ -786,7 +787,7 @@ figure.effect-zoe figcaption {
 
 figure.effect-zoe h3 {
 	float: left;
-	line-height: 30px;
+	line-height: 20px;
 }
 figure.effect-zoe p.icon-links a {
 	float: right;
@@ -802,7 +803,7 @@ figure.effect-zoe:hover p.icon-links a:focus {
 
 figure.effect-zoe p.description {
 	position: absolute;
-	bottom: 8em;
+	bottom: 5em;
 	padding: 2em;
 	color: #fff;
 	text-transform: none;
@@ -1335,16 +1336,16 @@ figure.effect-terry:hover p a:nth-child(4) {
 	height: 100px;
 	/*border: 1px solid green;*/
 }
-.callus2{
-	/*height: 100px;*/
+/*.callus2{
+	height: 100px;
 	width: 100%;
-	/*border: 1px solid red;*/
+	border: 1px solid red;
 
 }
 .callus2 .col-lg-4{
 	height: 100px;
-	/*border: 1px solid green;*/
-}
+	border: 1px solid green;
+}*/
 #style input{
 	width: 95%;
   	outline: none;
@@ -1472,7 +1473,27 @@ figure.effect-terry:hover p a:nth-child(4) {
 	line-height: 45px;
 	color: white;
 }
-
+@media screen and (max-width: 400px) {
+	.footer-main a {
+		font-size: 12px;
+	}
+	.footer-main .footer-page1-1 a {
+	text-decoration: none;
+	display: block;
+	/*text-align: center;*/
+	margin-left: 10%;
+	line-height: 45px;
+	color: white;
+}
+	.footer-main .footer-page3-1 a {
+	text-decoration: none;
+	display: block;
+	/*text-align: center;*/
+	margin-left: 10%;
+	line-height: 45px;
+	color: white;
+}
+}
 .footer-img {
 	background-color: rgba(0, 0, 0, 0.15);
 }
@@ -1487,7 +1508,7 @@ figure.effect-terry:hover p a:nth-child(4) {
 }
 
 .social-info>a {
-	/*text-decoration: none;*/
+	text-decoration: none;
 	/*display: block;*/
 	margin: 0px 20px;
 	padding: 15px;
@@ -1498,7 +1519,20 @@ figure.effect-terry:hover p a:nth-child(4) {
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-
+@media screen and (max-width: 400px) {
+	.social-info>a {
+	text-decoration: none;
+	/*display: block;*/
+	margin: 0px 10px;
+	padding: 12px;
+	line-height: 30px;
+	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+}
 .social-info>a:hover {
 	background: #ffffff;
 }
