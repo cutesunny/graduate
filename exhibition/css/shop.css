@@ -14,11 +14,11 @@ body,html {
 	margin-left: 4%;
 	margin-right: 4%;
 }
-.shop-main a{
-	text-decoration: none;
-	display: block;
-	color: black;
-}
+/*.shop-main a{*/
+	/*text-decoration: none;*/
+	/*display: block;*/
+	/*color: black;*/
+/*}*/
 .shop-top{
 	margin-top: 20px;
 	/*height:410px;*/
@@ -60,6 +60,18 @@ body,html {
 	text-align: center;
 	margin-top: -1px;
 	color: white;
+}
+.shop-main .col-lg-12 .more{
+    height: 100px;
+    border-bottom: 1px solid beige;
+}
+.shop-main .col-lg-12 .more a{
+    text-decoration: none;
+    display: block;
+    color: beige;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
 }
 .shop-1 .col-lg-3{
 	/*height:400px;*/

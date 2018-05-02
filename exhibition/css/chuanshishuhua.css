@@ -153,13 +153,49 @@ body,html {
 	float: left;
 	margin-top: 5px;
 }
+.cssh-show1 .more .col-lg-12{
+    height: 100px;
+    border-bottom: 1px solid beige;
+}
+.cssh-show1 .more .col-lg-12 a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: beige;
+    line-height: 100px;
+    font-size: 25px;
+}
 .cssh-show2{
 	/*margin-top: 20px;*/
 	/*height: 600px;*/
 	/*border: 1px solid red;*/
 }
+.cssh-show2 .more .col-lg-12{
+    height: 100px;
+    border-bottom: 1px solid beige;
+}
+.cssh-show2 .more .col-lg-12 a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: beige;
+    line-height: 100px;
+    font-size: 25px;
+}
 .cssh-show3{
 	/*margin-top: 20px;*/
 	/*height: 600px;*/
 	/*border: 1px solid red;*/
+}
+.cssh-show3 .more .col-lg-12{
+    height: 100px;
+    border-bottom: 1px solid beige;
+}
+.cssh-show3 .more .col-lg-12 a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: beige;
+    line-height: 100px;
+    font-size: 25px;
 }
