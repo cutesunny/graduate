@@ -61,6 +61,26 @@ body,html {
 	margin-top: 22px;
 	margin-left: 24px;
 }
+.cssh-top-left-11 img:hover {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
 .cssh-top-left-12 a{
 	color: #000000;
 	display: block;
@@ -119,10 +139,19 @@ body,html {
 	height: 420px;
 	/*border: 1px solid yellow;*/
 }
-.cssh-show1-main-top img{
-	height: 420px;
-	width: 100%;
+.cssh-show1-main-top  img{
+	height: 400px;
+	width: 96%;
+    margin-top: 20px;
+    margin-left: 2%;
 	border-radius:20px;
+}
+.cssh-show1-main-top  img:hover{
+    margin-top: 0px;
+    width: 100%;
+    height: 420px;
+    cursor: pointer;
+    transition: all 0.9s;
 }
 .cssh-show1-main-bottom{
 	height: 80px;

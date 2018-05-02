@@ -85,6 +85,20 @@ body,html {
 	margin-top: 10px;
 	border-radius: 50%;
 }
+.ddsh-middle-top img:hover{
+    animation:go ease-in 5s;
+}
+@keyframes go{
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 .ddsh-middle-bottom{
 	height: 200px;
 	/*border: 1px solid green;*/
