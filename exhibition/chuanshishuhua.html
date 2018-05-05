@@ -84,7 +84,7 @@
 										<img src="img/csshleft2.png" />
 									</div>
 									<div class="cssh-top-left-12">
-										<a href="#xingshu">
+										<a href="javascript:void(0);" class="xing">
 											<p>行书</p>
 											<span>“行”即“行走”，因此行书既不“潦草”，也不“端正”。</span>
 										</a>
@@ -95,7 +95,7 @@
 										<img src="img/csshleft1.png" />
 									</div>
 									<div class="cssh-top-left-12">
-										<a href="#caoshu">
+										<a href="javascript:void(0);"  class="cao">
 											<p>草书</p>
 											<span>草书是按一定规律将字的点划连字，并不是随心所欲的乱写。</span>
 										</a>
@@ -106,7 +106,7 @@
 										<img src="img/csshleft3.png" />
 									</div>
 									<div class="cssh-top-left-12">
-										<a href="#kaishu">
+										<a href="javascript:void(0);"  class="kai">
 											<p>楷书</p>
 											<span>由隶书逐渐演变而来，更趋简化，横平竖直。</span>
 										</a>
@@ -503,12 +503,25 @@
 		<script src="js/jquery.min.js"></script>
 		<!--使用bootstrap插件必须引入-->
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.scrollex.min.js"></script>
 		<script src="js/jquery.scrolly.min.js"></script>
+        <script src="js/jquery.scrollTo.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/util.js"></script>
 		<script src="js/main.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $(".xing").click(function(){
+                    window.scrollTo(0, 550);
+                });
+                $(".cao").click(function(){
+                    window.scrollTo(0, 1200);
+                });
+                $(".kai").click(function(){
+                    window.scrollTo(0,1850);
+                });
+            });
+        </script>
 	</body>
 
 </html>

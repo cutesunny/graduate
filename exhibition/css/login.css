@@ -235,8 +235,17 @@ html {
 	background: lightblue;
 	margin-top: 10px;
 	border-radius: 10px;
-} 
-                           
+}
+@media screen and (max-width: 2000px) {
+    .log-in {
+        width: 35%;
+        height: 350px;
+    }
+    .regist {
+        width: 35%;
+        height: 450px;
+    }
+}
 @media screen and (max-width: 1680px) {
 	.log-in {
 		width: 35%;
