@@ -3,6 +3,13 @@
 
 $(function(){
 	if(!dataOn){
+        $('#slider_index').append('<li data-target="#carousel1" data-slide-to="0" class="active"></li>');
+        $('#slider_index').append('<li data-target="#carousel1" data-slide-to="0"></li>');
+        $('#slider_index').append('<li data-target="#carousel1" data-slide-to="0"></li>');
+
+		$('#slider_image').append('<div class="item active"><img src="img/photo1.jpg" alt="..."></div>');
+        $('#slider_image').append('<div class="item"><img src="img/photo1.jpg" alt="..."></div>');
+        $('#slider_image').append('<div class="item"><img src="img/photo1.jpg" alt="..."></div>');
 		return;
 	}
 	//获取幻灯片数据
@@ -11,7 +18,7 @@ $(function(){
 		method:'get',
 		dataType:'json',
 		success:function(response){
-			if(response.status == 200){
+			if(response.status === 200){
 				setSliderImage(response.data);
 			}else{
 				layer.alert('加载幻灯片数据失败', {icon: 2});
@@ -27,7 +34,7 @@ $(function(){
 		method:'get',
 		dataType:'json',
 		success:function(response){
-			if(response.status == 200){
+			if(response.status === 200){
 				setCqshData(response.data);
 			}else{
 				
@@ -43,7 +50,7 @@ $(function(){
 		method:'get',
 		dataType:'json',
 		success:function(response){
-			if(response.status == 200){
+			if(response.status === 200){
 				setDdshData(response.data);
 			}else{
 				
@@ -59,7 +66,7 @@ $(function(){
 		method:'get',
 		dataType:'json',
 		success:function(response){
-			if(response.status == 200){
+			if(response.status === 200){
 				setGalleryData(response.data);
 			}else{
 				
@@ -75,7 +82,7 @@ $(function(){
 		method:'get',
 		dataType:'json',
 		success:function(response){
-			if(response.status == 200){
+			if(response.status === 200){
 				setGalleryData(response.data);
 			}else{
 				
@@ -91,7 +98,7 @@ $(function(){
 		method:'get',
 		dataType:'json',
 		success:function(response){
-			if(response.status == 200){
+			if(response.status === 200){
 				setAuctionData(response.data);
 			}else{
 				
