@@ -1,5 +1,5 @@
 //运行模式,local 本地模式 本地服务器,remote 远程模式,远程服务器
-var dataOn = true;
+var dataOn = false;
 var isLogin = false;
 var mode = 'local';
 var baseUrl;
