@@ -8,7 +8,7 @@
 		<!--设置支持移动端的视窗-->
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<!--上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后-->
-		<title>模板</title>
+		<title>more新闻</title>
 		<!--Bootsttap-->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/contact.css" rel="stylesheet" />
@@ -22,6 +22,7 @@
 		<link href="css/cssh-erji.css" rel="stylesheet" />
 		<link href="css/remark.css" rel="stylesheet" />
 		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+        <link href="css/animation.css" rel="stylesheet" />
 	</head>
 	<style>
 		* {
@@ -47,85 +48,8 @@
 			margin-left: 4%;
 			margin-right: 4%;
 		}
-		/*figure -- common*/
-		
-		.news1-main figure {
-			position: relative;
-			float: left;
-			overflow: hidden;
-			margin: 10px 1%;
-			/*min-width: 320px;
-	max-width: 480px;*/
-			max-height: 360px;
-			width: 100%;
-			background: #2E3842;
-			text-align: center;
-			cursor: pointer;
-		}
-		
-		.news1-main figure img {
-			position: relative;
-			display: block;
-			min-height: 100%;
-			max-width: 100%;
-			opacity: 0.8;
-		}
-		
-		.news1-main figure figcaption {
-			padding: 2em;
-			color: #fff;
-			text-transform: uppercase;
-			font-size: 1.3em;
-			line-height: 25px;
-			-webkit-backface-visibility: hidden;
-			backface-visibility: hidden;
-		}
-		
-		.news1-main figure figcaption::before,
-		.news1-main figure figcaption::after {
-			pointer-events: none;
-		}
-		
-		.news1-main figure figcaption,
-		.news1-main figure figcaption>a {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
-		/* Anchor will cover the whole item by default */
-		/* For some effects it will show as a button */
-		
-		.news1-main figure figcaption>a {
-			z-index: 1000;
-			text-indent: 200%;
-			white-space: nowrap;
-			font-size: 0;
-			opacity: 0;
-		}
-		
-		.news1-main figure h2 {
-			word-spacing: -0.15em;
-			font-weight: 300;
-		}
-		
-		.news1-main figure h2 span {
-			font-weight: 800;
-		}
-		
-		.news1-main figure h2,
-		.news1-main figure p {
-			margin: 0;
-		}
-		
-		.news1-main figure p {
-			letter-spacing: 1px;
-			font-size: 68.5%;
-		}
-		
 		.news1-top {
-			height: 100px;
+			/*height: 100px;*/
 			/*border: 1px solid red;*/
 		}
 		
@@ -142,13 +66,13 @@
 		}
 		
 		.news1-details1 .col-lg-6 {
-			height: 400px;
+			/*height: 400px;*/
 		}
 		.news1-details2 .col-lg-6 {
-			height: 400px;
+			/*height: 400px;*/
 		}
 		.news1-details3 .col-lg-6 {
-			height: 400px;
+			/*height: 400px;*/
 		}
 		figure.effect-terry {
 			background: #34495e;
@@ -208,10 +132,10 @@
 			transform: translate3d(100%, 0, 0);
 		}
 		
-		@media screen and (max-width: 920px) {
+		@media screen and (max-width: 500px) {
 			figure.effect-terry h2 {
-				padding: 0.75em 10px;
-				font-size: 120%;
+				padding: 0.5em 5px;
+				font-size: 100%;
 			}
 		}
 		
@@ -276,6 +200,70 @@
 			-webkit-transition-delay: 0.1s;
 			transition-delay: 0.1s;
 		}
+        .news1-bottom {
+            height: 100px;
+            /*border: 1px solid red;*/
+        }
+
+        .news1-bottom .col-lg-12 {
+            height: 100px;
+            /*border: 1px solid green;*/
+        }
+
+        .news1-bottom .nextpage {
+            height: 40px;
+            width: 300px;
+            /*border: 1px solid red;*/
+            /*background: gold;*/
+            margin: 30px auto;
+        }
+
+        .news1-bottom .nextpage a {
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            line-height: 40px;
+        }
+        .news1-bottom .nextpage a span {
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding:0 30px;
+            background: gold;
+            float: left;
+            line-height: 40px;
+        }
+        .news1-bottom .nextpage .next span{
+            margin-left: 70px;
+        }
+        @media screen and (max-width: 500px) {
+            .news1-bottom .nextpage a span {
+                text-decoration: none;
+                display: block;
+                text-align: center;
+                padding:0 20px;
+                background: gold;
+                float: left;
+                line-height: 40px;
+            }
+            .news1-bottom .nextpage .next span{
+                margin-left: 10px;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            .news1-bottom .nextpage a span {
+                text-decoration: none;
+                display: block;
+                text-align: center;
+                padding:0 20px;
+                background: gold;
+                float: left;
+                line-height: 40px;
+            }
+            .news1-bottom .nextpage .next span{
+                margin-left: 10px;
+            }
+        }
 	</style>
 
 	<body>
@@ -432,6 +420,18 @@
 						</div>
 					</div>
 				</div>
+                <div class="news1-bottom">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="nextpage">
+                                <a href="#">
+                                    <div class="pre"><span>上一页</span></div>
+                                    <div class="next"><span>下一页</span></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 				<div class="footer">
 					<div class="footer-main">
 						<div class="row">

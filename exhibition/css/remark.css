@@ -156,19 +156,44 @@ html {
 
 .remark-bottom .nextpage {
 	height: 40px;
-	width: 100px;
+	width: 300px;
 	/*border: 1px solid red;*/
-	background: gold;
+	/*background: gold;*/
 	margin: 30px auto;
 }
 
 .remark-bottom .nextpage a {
-	text-decoration: none;
-	display: block;
-	text-align: center;
-	line-height: 40px;
+     text-decoration: none;
+     display: block;
+     text-align: center;
+     line-height: 40px;
+ }
+.remark-bottom .nextpage a span {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding:0 30px;
+    background: gold;
+    float: left;
+    line-height: 40px;
 }
-
+.remark-bottom .nextpage .next span{
+    margin-left: 70px;
+}
+@media screen and (max-width: 500px) {
+    .remark-bottom .nextpage a span {
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        padding:0 20px;
+        background: gold;
+        float: left;
+        line-height: 40px;
+    }
+    .remark-bottom .nextpage .next span{
+        margin-left: 10px;
+    }
+}
 .news-details-remark {
 	/*height: 300px;*/
 	/*border: 1px solid white;*/
