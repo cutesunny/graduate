@@ -4,8 +4,8 @@
 $(function(){
 	if(!dataOn){
         $('#slider_index').append('<li data-target="#carousel1" data-slide-to="0" class="active"></li>');
-        $('#slider_index').append('<li data-target="#carousel1" data-slide-to="0"></li>');
-        $('#slider_index').append('<li data-target="#carousel1" data-slide-to="0"></li>');
+        $('#slider_index').append('<li data-target="#carousel1" data-slide-to="1"></li>');
+        $('#slider_index').append('<li data-target="#carousel1" data-slide-to="2"></li>');
 
 		$('#slider_image').append('<div class="item active"><img src="img/photo1.jpg" alt="..."></div>');
         $('#slider_image').append('<div class="item"><img src="img/photo1.jpg" alt="..."></div>');
@@ -15,10 +15,11 @@ $(function(){
 	//获取幻灯片数据
 	$.ajax({
 		url:baseUrl+'/api/sliderImage/list',
+		async:false
 		method:'get',
 		dataType:'json',
 		success:function(response){
-			if(response.status === 200){
+			if(response.code === 200){
 				setSliderImage(response.data);
 			}else{
 				layer.alert('加载幻灯片数据失败', {icon: 2});
@@ -112,8 +113,16 @@ $(function(){
 /**
  * 置幻灯片数据
  */
-function setSliderImage(images){
-	
+function setSliderImage(sliderList){
+	for(let i = 0; i < sliderList.length; i++){
+		if(i === 0 ){
+            $('#slider_index').append('<li data-target="#carousel1" data-slide-to="'+i+'" class="active"></li>');
+            $('#slider_image').append('<div class="item active"><img src="'+sliderList[i].path+'" ></div>');
+		}else{
+            $('#slider_index').append('<li data-target="#carousel1" data-slide-to="'+i+'"></li>');
+            $('#slider_image').append('<div class="item"><img src="'+sliderList[i].path+'" ></div>');
+		}
+	}
 }
 /**
  * 置传奇书画数据
