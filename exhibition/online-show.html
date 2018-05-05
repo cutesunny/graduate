@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!--上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后-->
     <title>近期展览</title>
-    <!--Bootsttap-->
+    <!--Bootstrap-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/contact.css" rel="stylesheet" />
     <link href="css/shop.css" rel="stylesheet">
@@ -42,99 +42,99 @@
         font-family: "微软雅黑";
     }
 
-    .mywork-main {
+    .online-show-main {
         margin-left: 4%;
         margin-right: 4%;
     }
-    .mywork-details{
-        height: 600px;
-        background: url("img/mywork-bg.jpg");
+    .online-show-top{
+        height: 400px;
+        /*border: 1px solid red;*/
     }
-    .mywork-details .col-lg-12{
-        height: 600px;
+    .online-show-top .col-lg-12{
+        height: 400px;
+        /*border: 1px solid white;*/
     }
-    .mywork-content{
-        width: 30%;
-        margin-left: 35%;
+    .online-show-top .col-lg-12 h2{
+        font-family: 楷体;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+        margin-top: -1px;
     }
-    @media screen and (max-width: 980px) {
-        .mywork-content{
-            width: 50%;
-            margin-left: 25%;
-        }
+    .online-show-top .col-lg-12 p{
+        color: #ffffff;
+        font-size: 25px;
+        font-family: 楷体;
+        text-indent: 2em;
+        margin: 0 20px;
+        line-height: 30px;
     }
-    @media screen and (max-width: 736px) {
-        .mywork-content{
-            width: 60%;
-            margin-left: 20%;
-        }
+    .online-show-1{
+        height: 300px;
+        /*border: 1px solid red;*/
+    }
+    .online-show-2,.online-show-3,.online-show-4{
+        margin-top: 30px;
+        height: 300px;
+        /*border: 1px solid red;*/
+    }
+    .online-show-1 .col-lg-4,.online-show-2 .col-lg-4,.online-show-3 .col-lg-4,.online-show-4 .col-lg-4{
+        height: 300px;
+        /*border: 1px solid white;*/
+    }
+    .online-show-1 .col-lg-4 img,.online-show-2 .col-lg-4 img,.online-show-3 .col-lg-4 img,.online-show-4 .col-lg-4 img{
+        height: 300px;
+        width: 100%;
+    }
+    .online-show-bottom {
+        height: 100px;
+        /*border: 1px solid red;*/
+    }
+
+    .online-show-bottom .col-lg-12 {
+        height: 100px;
+        /*border: 1px solid green;*/
+    }
+
+    .online-show-bottom .nextpage {
+        height: 40px;
+        width: 300px;
+        /*border: 1px solid red;*/
+        /*background: gold;*/
+        margin: 30px auto;
+    }
+
+    .online-show-bottom .nextpage a {
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        line-height: 40px;
+    }
+    .online-show-bottom .nextpage a span {
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        padding:0 30px;
+        background: gold;
+        float: left;
+        line-height: 40px;
+    }
+    .online-show-bottom .nextpage .next span{
+        margin-left: 70px;
     }
     @media screen and (max-width: 500px) {
-        .mywork-content{
-            width: 80%;
-            margin-left: 10%;
+        .online-show-bottom .nextpage a span {
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding:0 20px;
+            background: gold;
+            float: left;
+            line-height: 40px;
         }
-    }
-    .mywork-details .col-lg-12 h3{
-        color: #ffffff;
-        line-height: 100px;
-        text-align: center;
-    }
-    .mywork-details label{
-        color: white;
-        display: block;
-        font-size: 20px;
-    }
-    .mywork1{
-        height: 90px;
-    }
-    .mywork1 input{
-        width: 100%;
-        outline: none;
-        border: none;
-        background: rgba(255, 255, 255, 0.5);
-        height: 50px;
-    }
-    .mywork2{
-        height: 90px;
-    }
-    .mywork2 select{
-        width: 100%;
-        outline: none;
-        border: none;
-        background: rgba(255, 255, 255, 0.5);
-        height: 50px;
-    }
-    .mywork3{
-        height: 90px;
-    }
-    .mywork3 input{
-        width: 100%;
-        outline: none;
-        border: none;
-        background: rgba(255, 255, 255, 0.5);
-        height: 50px;
-    }
-    .mywork4{
-        height: 130px;
-    }
-    textarea{
-        width: 100%;
-        height: 80px;
-        outline: none;
-        border: none;
-        background: rgba(255, 255, 255, 0.5);
-    }
-    .mywork5{
-        height: 50px;
-    }
-    .mywork5 input{
-        width: 30%;
-        margin-left: 35%;
-        outline: none;
-        border: none;
-        background: #e25111;
-        height: 40px;
+        .online-show-bottom .nextpage .next span{
+            margin-left: 10px;
+        }
     }
 </style>
 
@@ -182,39 +182,80 @@
     </header>
 </div>
 <div class="container-fluid">
-    <div class="mywok-main">
-        <div class="mywork-details">
+    <div class="online-show-main">
+        <div class="online-show-top">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="mywork-content">
-                        <h3>上传作品</h3>
-                        <form>
-                            <div class="mywork1">
-                                <label for="work-name">作品类别：</label>
-                                <input type="text" name="work-name" required="required" placeholder="作品名称"/>
-                            </div>
-                            <div class="mywork2">
-                                <label for="work-kind">作品类别：</label>
-                                <select name="id">
-                                    <option value="">书法作品</option>
-                                    <option value="">国画作品</option>
-                                    <option value="">油画作品</option>
-                                    <option value="">版画作品</option>
-                                    <option value="">水粉作品</option>
-                                </select>
-                            </div>
-                            <div class="mywork3">
-                                <label for="imgfile">选择图片文件:</label>
-                                <input type="file" name="imgfile"  accept="image/gif, image/jpeg" style="outline: none;border: none;"/>
-                            </div>
-                            <div class="mywork4">
-                                <label>作品描述：</label>
-                                <textarea name="describe" id="describe" required="required" placeholder="留下宝贝的描述吧！"></textarea>
-                            </div>
-                            <div class="mywork5">
-                                <input name="upload" type="submit" value="上传" />
-                            </div>
-                        </form>
+                    <h2>孙福林画展</h2>
+                    <p>5月1日，画家孙福林个人画展在家乡长葛市老城镇双庙村尚庄开幕，现场展出了他各个时期代表作品二百余幅，展期二十天。</p>
+                    <p>画展在孙福林的祖籍地尚庄新居中举行，展品以写意梅花为主，多种尺寸规格的红梅、白梅画作枝繁花茂，姿态各异，清新别致，
+                        展出的皆是其四十多年艺术创作生涯的精品力作。</p>
+                    <p>孙福林1939年生，擅长花鸟画，尤精写意梅花，作品曾荣获国内各类书画比赛奖项二十多项。他现为中国美术家协会会员，国家一级美术师，
+                        现居郑州。</p>
+                    <p>中共河南省委宣传部原常务副部长葛纪谦、中国书画家杂志社社长史家治等各界来宾出席开幕式并观看了展品。</p>
+                </div>
+            </div>
+        </div>
+        <div class="online-show-1">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="show2.html"><img src="img/show-2-1.jpg"/></a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="show2.html"><img src="img/show-2-2.jpg"/></a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="show2.html"><img src="img/show-2-3.jpg"/></a>
+                </div>
+            </div>
+        </div>
+        <div class="online-show-2">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="show2.html"><img src="img/show-2-1.jpg"/></a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="show2.html"><img src="img/show-2-2.jpg"/></a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="show2.html"><img src="img/show-2-3.jpg"/></a>
+                </div>
+            </div>
+        </div>
+        <div class="online-show-3">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="show2.html"><img src="img/show-2-1.jpg"/></a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="show2.html"><img src="img/show-2-2.jpg"/></a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="show2.html"><img src="img/show-2-3.jpg"/></a>
+                </div>
+            </div>
+        </div>
+        <div class="online-show-4">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="show2.html"><img src="img/show-2-1.jpg"/></a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="show2.html"><img src="img/show-2-2.jpg"/></a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="show2.html"><img src="img/show-2-3.jpg"/></a>
+                </div>
+            </div>
+        </div>
+        <div class="online-show-bottom">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="nextpage">
+                        <a href="#">
+                            <div class="pre"><span>上一页</span></div>
+                            <div class="next"><span>下一页</span></div>
+                        </a>
                     </div>
                 </div>
             </div>

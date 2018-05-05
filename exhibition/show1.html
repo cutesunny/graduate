@@ -77,6 +77,56 @@
 			height: 300px;
 			width: 100%;
 		}
+        .show1-bottom {
+            height: 100px;
+            /*border: 1px solid red;*/
+        }
+
+        .show1-bottom .col-lg-12 {
+            height: 100px;
+            /*border: 1px solid green;*/
+        }
+
+        .show1-bottom .nextpage {
+            height: 40px;
+            width: 300px;
+            /*border: 1px solid red;*/
+            /*background: gold;*/
+            margin: 30px auto;
+        }
+
+        .show1-bottom .nextpage a {
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            line-height: 40px;
+        }
+        .show1-bottom .nextpage a span {
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding:0 30px;
+            background: gold;
+            float: left;
+            line-height: 40px;
+        }
+        .show1-bottom .nextpage .next span{
+            margin-left: 70px;
+        }
+        @media screen and (max-width: 500px) {
+            .show1-bottom .nextpage a span {
+                text-decoration: none;
+                display: block;
+                text-align: center;
+                padding:0 20px;
+                background: gold;
+                float: left;
+                line-height: 40px;
+            }
+            .show1-bottom .nextpage .next span{
+                margin-left: 10px;
+            }
+        }
 	</style>
 
 	<body>
@@ -95,10 +145,10 @@
                                         <a href="index.html">首页</a>
                                     </li>
                                     <li>
-                                        <a href="chuanshishuhua.html">传世书画</a>
+                                        <a href="chuanshishuhua.html">传世书法</a>
                                     </li>
                                     <li>
-                                        <a href="dangdaishuhua.html">当代书画</a>
+                                        <a href="dangdaishuhua.html">传世绘画</a>
                                     </li>
                                     <li>
                                         <a href="show.html">书画展览</a>
@@ -183,6 +233,18 @@
 						</div>
 					</div>
 				</div>
+                <div class="show1-bottom">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="nextpage">
+                                <a href="#">
+                                    <div class="pre"><span>上一页</span></div>
+                                    <div class="next"><span>下一页</span></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 				<div class="footer">
 					<div class="footer-main">
 						<div class="row">

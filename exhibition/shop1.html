@@ -75,14 +75,22 @@
         background: beige;
     }
     .shop1-main .col-lg-3-top{
-        /*height:320px;*/
+        height:320px;
         /*border:1px solid black;*/
     }
     .shop1-main .col-lg-3-top img{
-        height:300px;
-        width:90%;
-        margin-left: 5%;
+        height:290px;
+        width:94%;
+        margin-left: 3%;
         margin-top: 20px;
+    }
+    .shop1-main .col-lg-3-top img:hover{
+        margin-top: 0;
+        width: 100%;
+        height: 320px;
+        margin-left: 0;
+        cursor: pointer;
+        transition: all 0.9s;
     }
     .shop1-main .col-lg-3-bottom{
         /*height:80px;*/
@@ -130,6 +138,56 @@
         line-height: 40px;
         text-align: center;
     }
+    .shop1-bottom {
+        height: 100px;
+        /*border: 1px solid red;*/
+    }
+
+    .shop1-bottom .col-lg-12 {
+        height: 100px;
+        /*border: 1px solid green;*/
+    }
+
+    .shop1-bottom .nextpage {
+        height: 40px;
+        width: 300px;
+        /*border: 1px solid red;*/
+        /*background: gold;*/
+        margin: 30px auto;
+    }
+
+    .shop1-bottom .nextpage a {
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        line-height: 40px;
+    }
+    .shop1-bottom .nextpage a span {
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        padding:0 30px;
+        background: gold;
+        float: left;
+        line-height: 40px;
+    }
+    .shop1-bottom .nextpage .next span{
+        margin-left: 70px;
+    }
+    @media screen and (max-width: 500px) {
+        .shop1-bottom .nextpage a span {
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding:0 20px;
+            background: gold;
+            float: left;
+            line-height: 40px;
+        }
+        .shop1-bottom .nextpage .next span{
+            margin-left: 10px;
+        }
+    }
 </style>
 
 <body>
@@ -148,10 +206,10 @@
                                 <a href="index.html">首页</a>
                             </li>
                             <li>
-                                <a href="chuanshishuhua.html">传世书画</a>
+                                <a href="chuanshishuhua.html">传世书法</a>
                             </li>
                             <li>
-                                <a href="dangdaishuhua.html">当代书画</a>
+                                <a href="dangdaishuhua.html">传世绘画</a>
                             </li>
                             <li>
                                 <a href="show.html">书画展览</a>
@@ -516,6 +574,18 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shop1-bottom">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="nextpage">
+                        <a href="#">
+                            <div class="pre"><span>上一页</span></div>
+                            <div class="next"><span>下一页</span></div>
+                        </a>
                     </div>
                 </div>
             </div>
