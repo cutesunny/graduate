@@ -15,7 +15,7 @@ $(function(){
 	//获取幻灯片数据
 	$.ajax({
 		url:baseUrl+'/api/sliderImage/list',
-		async:false
+		async:false,
 		method:'get',
 		dataType:'json',
 		success:function(response){
