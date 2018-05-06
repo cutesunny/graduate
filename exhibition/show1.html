@@ -21,6 +21,7 @@
 		<link href="css/gonex-icons.css" rel="stylesheet" />
 		<link href="css/cssh-erji.css" rel="stylesheet" />
 		<link href="css/remark.css" rel="stylesheet" />
+        <link href="css/animation.css" rel="stylesheet" />
 	</head>
 	<style>
 		* {
@@ -77,6 +78,53 @@
 			height: 300px;
 			width: 100%;
 		}
+        figure.effect-ruby {
+            background-color: #17819c;
+        }
+
+        figure.effect-ruby img {
+            opacity: 0.7;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+        }
+
+        figure.effect-ruby:hover img {
+            opacity: 0.5;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+
+        figure.effect-ruby h2 {
+            margin-top: 20%;
+            -webkit-transition: -webkit-transform 0.35s;
+            transition: transform 0.35s;
+            -webkit-transform: translate3d(0,20px,0);
+            transform: translate3d(0,20px,0);
+        }
+
+        figure.effect-ruby p {
+            margin: 1em 0 0;
+            padding: 2em;
+            border: 1px solid #fff;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: translate3d(0,20px,0) scale(1.1);
+            transform: translate3d(0,20px,0) scale(1.1);
+        }
+
+        figure.effect-ruby:hover h2 {
+            -webkit-transform: translate3d(0,-50px,0);
+            transform: translate3d(0,-50px,0);
+        }
+
+        figure.effect-ruby:hover p {
+            opacity: 1;
+            -webkit-transform: translate3d(0,-50px,0) scale(1);
+            transform: translate3d(0,-50px,0) scale(1);
+        }
         .show1-bottom {
             height: 100px;
             /*border: 1px solid red;*/
@@ -184,54 +232,138 @@
 				<div class="show1-1">
 					<div class="row">
 						<div class="col-lg-4">
-							<a href="show2.html"><img src="img/show-2-1.jpg"/></a>
+                            <figure class="effect-ruby">
+                                <img src="img/show-2-1.jpg" alt="show-2-1.jpg"/>
+                                <figcaption>
+                                    <h2>Glowing <span>Ruby</span></h2>
+                                    <p>Ruby did not need any help. Everybody knew that.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
 						</div>
 						<div class="col-lg-4">
-							<a href="show2.html"><img src="img/show-2-2.jpg"/></a>
+                            <figure class="effect-ruby">
+                                <img src="img/show-2-2.jpg" alt="show-2-2.jpg"/>
+                                <figcaption>
+                                    <h2>Glowing <span>Ruby</span></h2>
+                                    <p>Ruby did not need any help. Everybody knew that.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
 						</div>
 						<div class="col-lg-4">
-							<a href="show2.html"><img src="img/show-2-3.jpg"/></a>
+                            <figure class="effect-ruby">
+                                <img src="img/show-2-3.jpg" alt="show-2-3.jpg"/>
+                                <figcaption>
+                                    <h2>Glowing <span>Ruby</span></h2>
+                                    <p>Ruby did not need any help. Everybody knew that.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
 						</div>
 					</div>
 				</div>
 				<div class="show1-2">
-					<div class="row">
-						<div class="col-lg-4">
-							<a href="show2.html"><img src="img/show-2-1.jpg"/></a>
-						</div>
-						<div class="col-lg-4">
-							<a href="show2.html"><img src="img/show-2-2.jpg"/></a>
-						</div>
-						<div class="col-lg-4">
-							<a href="show2.html"><img src="img/show-2-3.jpg"/></a>
-						</div>
-					</div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <figure class="effect-ruby">
+                                <img src="img/show-2-1.jpg" alt="show-2-1.jpg"/>
+                                <figcaption>
+                                    <h2>Glowing <span>Ruby</span></h2>
+                                    <p>Ruby did not need any help. Everybody knew that.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure class="effect-ruby">
+                                <img src="img/show-2-2.jpg" alt="show-2-2.jpg"/>
+                                <figcaption>
+                                    <h2>Glowing <span>Ruby</span></h2>
+                                    <p>Ruby did not need any help. Everybody knew that.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure class="effect-ruby">
+                                <img src="img/show-2-3.jpg" alt="show-2-3.jpg"/>
+                                <figcaption>
+                                    <h2>Glowing <span>Ruby</span></h2>
+                                    <p>Ruby did not need any help. Everybody knew that.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
 				</div>
 				<div class="show1-3">
-					<div class="row">
-						<div class="col-lg-4">
-							<a href="show2.html"><img src="img/show-2-1.jpg"/></a>
-						</div>
-						<div class="col-lg-4">
-							<a href="show2.html"><img src="img/show-2-2.jpg"/></a>
-						</div>
-						<div class="col-lg-4">
-							<a href="show2.html"><img src="img/show-2-3.jpg"/></a>
-						</div>
-					</div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <figure class="effect-ruby">
+                                <img src="img/show-2-1.jpg" alt="show-2-1.jpg"/>
+                                <figcaption>
+                                    <h2>Glowing <span>Ruby</span></h2>
+                                    <p>Ruby did not need any help. Everybody knew that.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure class="effect-ruby">
+                                <img src="img/show-2-2.jpg" alt="show-2-2.jpg"/>
+                                <figcaption>
+                                    <h2>Glowing <span>Ruby</span></h2>
+                                    <p>Ruby did not need any help. Everybody knew that.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure class="effect-ruby">
+                                <img src="img/show-2-3.jpg" alt="show-2-3.jpg"/>
+                                <figcaption>
+                                    <h2>Glowing <span>Ruby</span></h2>
+                                    <p>Ruby did not need any help. Everybody knew that.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
 				</div>
 				<div class="show1-4">
-					<div class="row">
-						<div class="col-lg-4">
-							<a href="show2.html"><img src="img/show-2-1.jpg"/></a>
-						</div>
-						<div class="col-lg-4">
-							<a href="show2.html"><img src="img/show-2-2.jpg"/></a>
-						</div>
-						<div class="col-lg-4">
-							<a href="show2.html"><img src="img/show-2-3.jpg"/></a>
-						</div>
-					</div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <figure class="effect-ruby">
+                                <img src="img/show-2-1.jpg" alt="show-2-1.jpg"/>
+                                <figcaption>
+                                    <h2>Glowing <span>Ruby</span></h2>
+                                    <p>Ruby did not need any help. Everybody knew that.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure class="effect-ruby">
+                                <img src="img/show-2-2.jpg" alt="show-2-2.jpg"/>
+                                <figcaption>
+                                    <h2>Glowing <span>Ruby</span></h2>
+                                    <p>Ruby did not need any help. Everybody knew that.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure class="effect-ruby">
+                                <img src="img/show-2-3.jpg" alt="show-2-3.jpg"/>
+                                <figcaption>
+                                    <h2>Glowing <span>Ruby</span></h2>
+                                    <p>Ruby did not need any help. Everybody knew that.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
 				</div>
                 <div class="show1-bottom">
                     <div class="row">

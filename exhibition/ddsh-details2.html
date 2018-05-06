@@ -20,6 +20,7 @@
 		<link href="css/news.css" rel="stylesheet" />
 		<link href="css/gonex-icons.css" rel="stylesheet" />
 		<link href="css/cssh-erji.css" rel="stylesheet" />
+        <link href="css/animation.css" rel="stylesheet" />
 	</head>
 	<style>
 		* {
@@ -70,6 +71,72 @@ body,html {
 	height: 300px;
 	width: 100%;
 }
+        figure.effect-chico img {
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: scale(1.12);
+            transform: scale(1.12);
+        }
+
+        figure.effect-chico:hover img {
+            opacity: 0.5;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+
+        figure.effect-chico figcaption {
+            padding: 3em;
+        }
+
+        figure.effect-chico figcaption::before {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            bottom: 30px;
+            left: 30px;
+            border: 1px solid #fff;
+            content: '';
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        figure.effect-chico figcaption::before,
+        figure.effect-chico p {
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+        }
+
+        figure.effect-chico h2 {
+            padding: 20% 0 20px 0;
+        }
+
+        figure.effect-chico p {
+            margin: 0 auto;
+            max-width: 200px;
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+
+        figure.effect-chico:hover figcaption::before,
+        figure.effect-chico:hover p {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+
+        @media screen and (max-width: 50em) {
+            .content {
+                padding: 0 10px;
+                text-align: center;
+            }
+            .grid figure {
+                display: inline-block;
+                float: none;
+                margin: 10px auto;
+                width: 100%;
+            }
+        }
 .ddsh-details2-photo2{
 	margin-top: 20px;
 	/*height: 300px;*/
@@ -193,52 +260,136 @@ body,html {
 						<div class="cssh-erji-photo1">
 							<div class="row">
 								<div class="col-lg-4">
-									<a href="ddsh-details1.html"><img src="img/ddsh-banhua.jpg"/></a>
+                                    <figure class="effect-chico">
+                                        <img src="img/ddsh-banhua.jpg" alt="ddsh-banhua.jpg"/>
+                                        <figcaption>
+                                            <h2>Silly <span>Chico</span></h2>
+                                            <p>Chico's main fear was missing the morning bus.</p>
+                                            <a href="ddsh-details1.html">View more</a>
+                                        </figcaption>
+                                    </figure>
 								</div>
 								<div class="col-lg-4">
-									<a href="ddsh-details1.html"><img src="img/ddsh-diaosu.jpg"/></a>
+                                    <figure class="effect-chico">
+                                        <img src="img/ddsh-banhua.jpg" alt="ddsh-banhua.jpg"/>
+                                        <figcaption>
+                                            <h2>Silly <span>Chico</span></h2>
+                                            <p>Chico's main fear was missing the morning bus.</p>
+                                            <a href="ddsh-details1.html">View more</a>
+                                        </figcaption>
+                                    </figure>
 								</div>
 								<div class="col-lg-4">
-									<a href="ddsh-details1.html"><img src="img/ddsh-guohua.jpg"/></a>
+                                    <figure class="effect-chico">
+                                        <img src="img/ddsh-banhua.jpg" alt="ddsh-banhua.jpg"/>
+                                        <figcaption>
+                                            <h2>Silly <span>Chico</span></h2>
+                                            <p>Chico's main fear was missing the morning bus.</p>
+                                            <a href="ddsh-details1.html">View more</a>
+                                        </figcaption>
+                                    </figure>
 								</div>
 							</div>
 						</div>
 						<div class="cssh-erji-photo2">
 							<div class="row">
 								<div class="col-lg-4">
-									<a href="ddsh-details1.html"><img src="img/ddsh-banhua.jpg"/></a>
+                                    <figure class="effect-chico">
+                                        <img src="img/ddsh-banhua.jpg" alt="ddsh-banhua.jpg"/>
+                                        <figcaption>
+                                            <h2>Silly <span>Chico</span></h2>
+                                            <p>Chico's main fear was missing the morning bus.</p>
+                                            <a href="ddsh-details1.html">View more</a>
+                                        </figcaption>
+                                    </figure>
 								</div>
 								<div class="col-lg-4">
-									<a href="ddsh-details1.html"><img src="img/ddsh-diaosu.jpg"/></a>
+                                    <figure class="effect-chico">
+                                        <img src="img/ddsh-banhua.jpg" alt="ddsh-banhua.jpg"/>
+                                        <figcaption>
+                                            <h2>Silly <span>Chico</span></h2>
+                                            <p>Chico's main fear was missing the morning bus.</p>
+                                            <a href="ddsh-details1.html">View more</a>
+                                        </figcaption>
+                                    </figure>
 								</div>
 								<div class="col-lg-4">
-									<a href="ddsh-details1.html"><img src="img/ddsh-guohua.jpg"/></a>
+                                    <figure class="effect-chico">
+                                        <img src="img/ddsh-banhua.jpg" alt="ddsh-banhua.jpg"/>
+                                        <figcaption>
+                                            <h2>Silly <span>Chico</span></h2>
+                                            <p>Chico's main fear was missing the morning bus.</p>
+                                            <a href="ddsh-details1.html">View more</a>
+                                        </figcaption>
+                                    </figure>
 								</div>
 							</div>
 						</div>
 						<div class="cssh-erji-photo3">
 							<div class="row">
 								<div class="col-lg-4">
-									<a href="ddsh-details1.html"><img src="img/ddsh-banhua.jpg"/></a>
+                                    <figure class="effect-chico">
+                                        <img src="img/ddsh-banhua.jpg" alt="ddsh-banhua.jpg"/>
+                                        <figcaption>
+                                            <h2>Silly <span>Chico</span></h2>
+                                            <p>Chico's main fear was missing the morning bus.</p>
+                                            <a href="ddsh-details1.html">View more</a>
+                                        </figcaption>
+                                    </figure>
 								</div>
 								<div class="col-lg-4">
-									<a href="ddsh-details1.html"><img src="img/ddsh-diaosu.jpg"/></a>
+                                    <figure class="effect-chico">
+                                        <img src="img/ddsh-banhua.jpg" alt="ddsh-banhua.jpg"/>
+                                        <figcaption>
+                                            <h2>Silly <span>Chico</span></h2>
+                                            <p>Chico's main fear was missing the morning bus.</p>
+                                            <a href="ddsh-details1.html">View more</a>
+                                        </figcaption>
+                                    </figure>
 								</div>
 								<div class="col-lg-4">
-									<a href="ddsh-details1.html"><img src="img/ddsh-guohua.jpg"/></a>
+                                    <figure class="effect-chico">
+                                        <img src="img/ddsh-banhua.jpg" alt="ddsh-banhua.jpg"/>
+                                        <figcaption>
+                                            <h2>Silly <span>Chico</span></h2>
+                                            <p>Chico's main fear was missing the morning bus.</p>
+                                            <a href="ddsh-details1.html">View more</a>
+                                        </figcaption>
+                                    </figure>
 								</div>
 							</div>
 						</div>
 						<div class="cssh-erji-photo4">
 							<div class="row">
 								<div class="col-lg-4">
-									<a href="ddsh-details1.html"><img src="img/ddsh-banhua.jpg"/></a>
+                                    <figure class="effect-chico">
+                                        <img src="img/ddsh-banhua.jpg" alt="ddsh-banhua.jpg"/>
+                                        <figcaption>
+                                            <h2>Silly <span>Chico</span></h2>
+                                            <p>Chico's main fear was missing the morning bus.</p>
+                                            <a href="ddsh-details1.html">View more</a>
+                                        </figcaption>
+                                    </figure>
 								</div>
 								<div class="col-lg-4">
-									<a href="ddsh-details1.html"><img src="img/ddsh-diaosu.jpg"/></a>
+                                    <figure class="effect-chico">
+                                        <img src="img/ddsh-banhua.jpg" alt="ddsh-banhua.jpg"/>
+                                        <figcaption>
+                                            <h2>Silly <span>Chico</span></h2>
+                                            <p>Chico's main fear was missing the morning bus.</p>
+                                            <a href="ddsh-details1.html">View more</a>
+                                        </figcaption>
+                                    </figure>
 								</div>
 								<div class="col-lg-4">
-									<a href="ddsh-details1.html"><img src="img/ddsh-guohua.jpg"/></a>
+                                    <figure class="effect-chico">
+                                        <img src="img/ddsh-banhua.jpg" alt="ddsh-banhua.jpg"/>
+                                        <figcaption>
+                                            <h2>Silly <span>Chico</span></h2>
+                                            <p>Chico's main fear was missing the morning bus.</p>
+                                            <a href="ddsh-details1.html">View more</a>
+                                        </figcaption>
+                                    </figure>
 								</div>
 							</div>
 						</div>

@@ -73,7 +73,7 @@
                                     <figcaption>
                                         <h2>近期展会</h2>
                                         <p>Bubba likes to appear out of thin air.</p>
-                                        <a href="#showA">View more</a>
+                                        <a href="javascript:void(1);" class="show-a">View more</a>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -86,7 +86,7 @@
                                         <figcaption>
                                             <h2>画廊机构</h2>
                                             <p>Bubba likes to appear out of thin air.</p>
-                                            <a href="#showB">View more</a>
+                                            <a href="javascript:void(1);" class="show-b">View more</a>
                                         </figcaption>
                                     </figure>
                                 </div>
@@ -96,7 +96,7 @@
                                         <figcaption>
                                             <h2>在线展览</h2>
                                             <p>Bubba likes to appear out of thin air.</p>
-                                            <a href="#showC">View more</a>
+                                            <a href="javascript:void(1);" class="show-c">View more</a>
                                         </figcaption>
                                     </figure>
                                 </div>
@@ -333,5 +333,19 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/util.js"></script>
 		<script src="js/main.js"></script>
+        <script src="js/jquery.scrollTo.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $(".show-a").click(function(){
+                    window.scrollTo(0, 430);
+                });
+                $(".show-b").click(function(){
+                    window.scrollTo(0, 1050);
+                });
+                $(".show-c").click(function(){
+                    window.scrollTo(0,2100);
+                });
+            });
+        </script>
 	</body>
 </html>

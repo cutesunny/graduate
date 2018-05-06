@@ -21,6 +21,7 @@
     <link href="css/gonex-icons.css" rel="stylesheet" />
     <link href="css/cssh-erji.css" rel="stylesheet" />
     <link href="css/remark.css" rel="stylesheet" />
+    <link href="css/animation.css" rel="stylesheet" />
 </head>
 <style>
     * {
@@ -85,6 +86,50 @@
     .online-show-1 .col-lg-4 img,.online-show-2 .col-lg-4 img,.online-show-3 .col-lg-4 img,.online-show-4 .col-lg-4 img{
         height: 300px;
         width: 100%;
+    }
+    figure.effect-selena {
+        background: #fff;
+    }
+
+    figure.effect-selena img {
+        opacity: 0.95;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+
+    figure.effect-selena:hover img {
+        -webkit-transform: scale3d(0.95,0.95,1);
+        transform: scale3d(0.95,0.95,1);
+    }
+
+    figure.effect-selena h2 {
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transform: translate3d(0,20px,0);
+        transform: translate3d(0,20px,0);
+    }
+
+    figure.effect-selena p {
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: perspective(1000px) rotate3d(1,0,0,90deg);
+        transform: perspective(1000px) rotate3d(1,0,0,90deg);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+    }
+
+    figure.effect-selena:hover h2 {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+
+    figure.effect-selena:hover p {
+        opacity: 1;
+        -webkit-transform: perspective(1000px) rotate3d(1,0,0,0);
+        transform: perspective(1000px) rotate3d(1,0,0,0);
     }
     .online-show-bottom {
         height: 100px;
@@ -199,52 +244,136 @@
         <div class="online-show-1">
             <div class="row">
                 <div class="col-lg-4">
-                    <a href="show2.html"><img src="img/show-2-1.jpg"/></a>
+                    <figure class="effect-selena">
+                        <img src="img/show-2-2.jpg" alt="show-2-2.jpg"/>
+                        <figcaption>
+                            <h2>Happy <span>Selena</span></h2>
+                            <p>Selena is a tiny-winged bird.</p>
+                            <a href="show2.html">View more</a>
+                        </figcaption>
+                    </figure>
                 </div>
                 <div class="col-lg-4">
-                    <a href="show2.html"><img src="img/show-2-2.jpg"/></a>
+                    <figure class="effect-selena">
+                        <img src="img/show-2-3.jpg" alt="show-2-3.jpg"/>
+                        <figcaption>
+                            <h2>Happy <span>Selena</span></h2>
+                            <p>Selena is a tiny-winged bird.</p>
+                            <a href="show2.html">View more</a>
+                        </figcaption>
+                    </figure>
                 </div>
                 <div class="col-lg-4">
-                    <a href="show2.html"><img src="img/show-2-3.jpg"/></a>
+                    <figure class="effect-selena">
+                        <img src="img/show-2-4.jpg" alt="show-2-4.jpg"/>
+                        <figcaption>
+                            <h2>Happy <span>Selena</span></h2>
+                            <p>Selena is a tiny-winged bird.</p>
+                            <a href="show2.html">View more</a>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
         <div class="online-show-2">
             <div class="row">
                 <div class="col-lg-4">
-                    <a href="show2.html"><img src="img/show-2-1.jpg"/></a>
+                    <figure class="effect-selena">
+                        <img src="img/show-2-2.jpg" alt="show-2-2.jpg"/>
+                        <figcaption>
+                            <h2>Happy <span>Selena</span></h2>
+                            <p>Selena is a tiny-winged bird.</p>
+                            <a href="show2.html">View more</a>
+                        </figcaption>
+                    </figure>
                 </div>
                 <div class="col-lg-4">
-                    <a href="show2.html"><img src="img/show-2-2.jpg"/></a>
+                    <figure class="effect-selena">
+                        <img src="img/show-2-3.jpg" alt="show-2-3.jpg"/>
+                        <figcaption>
+                            <h2>Happy <span>Selena</span></h2>
+                            <p>Selena is a tiny-winged bird.</p>
+                            <a href="show2.html">View more</a>
+                        </figcaption>
+                    </figure>
                 </div>
                 <div class="col-lg-4">
-                    <a href="show2.html"><img src="img/show-2-3.jpg"/></a>
+                    <figure class="effect-selena">
+                        <img src="img/show-2-4.jpg" alt="show-2-4.jpg"/>
+                        <figcaption>
+                            <h2>Happy <span>Selena</span></h2>
+                            <p>Selena is a tiny-winged bird.</p>
+                            <a href="show2.html">View more</a>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
         <div class="online-show-3">
             <div class="row">
                 <div class="col-lg-4">
-                    <a href="show2.html"><img src="img/show-2-1.jpg"/></a>
+                    <figure class="effect-selena">
+                        <img src="img/show-2-2.jpg" alt="show-2-2.jpg"/>
+                        <figcaption>
+                            <h2>Happy <span>Selena</span></h2>
+                            <p>Selena is a tiny-winged bird.</p>
+                            <a href="show2.html">View more</a>
+                        </figcaption>
+                    </figure>
                 </div>
                 <div class="col-lg-4">
-                    <a href="show2.html"><img src="img/show-2-2.jpg"/></a>
+                    <figure class="effect-selena">
+                        <img src="img/show-2-3.jpg" alt="show-2-3.jpg"/>
+                        <figcaption>
+                            <h2>Happy <span>Selena</span></h2>
+                            <p>Selena is a tiny-winged bird.</p>
+                            <a href="show2.html">View more</a>
+                        </figcaption>
+                    </figure>
                 </div>
                 <div class="col-lg-4">
-                    <a href="show2.html"><img src="img/show-2-3.jpg"/></a>
+                    <figure class="effect-selena">
+                        <img src="img/show-2-4.jpg" alt="show-2-4.jpg"/>
+                        <figcaption>
+                            <h2>Happy <span>Selena</span></h2>
+                            <p>Selena is a tiny-winged bird.</p>
+                            <a href="show2.html">View more</a>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
         <div class="online-show-4">
             <div class="row">
                 <div class="col-lg-4">
-                    <a href="show2.html"><img src="img/show-2-1.jpg"/></a>
+                    <figure class="effect-selena">
+                        <img src="img/show-2-2.jpg" alt="show-2-2.jpg"/>
+                        <figcaption>
+                            <h2>Happy <span>Selena</span></h2>
+                            <p>Selena is a tiny-winged bird.</p>
+                            <a href="show2.html">View more</a>
+                        </figcaption>
+                    </figure>
                 </div>
                 <div class="col-lg-4">
-                    <a href="show2.html"><img src="img/show-2-2.jpg"/></a>
+                    <figure class="effect-selena">
+                        <img src="img/show-2-3.jpg" alt="show-2-3.jpg"/>
+                        <figcaption>
+                            <h2>Happy <span>Selena</span></h2>
+                            <p>Selena is a tiny-winged bird.</p>
+                            <a href="show2.html">View more</a>
+                        </figcaption>
+                    </figure>
                 </div>
                 <div class="col-lg-4">
-                    <a href="show2.html"><img src="img/show-2-3.jpg"/></a>
+                    <figure class="effect-selena">
+                        <img src="img/show-2-4.jpg" alt="show-2-4.jpg"/>
+                        <figcaption>
+                            <h2>Happy <span>Selena</span></h2>
+                            <p>Selena is a tiny-winged bird.</p>
+                            <a href="show2.html">View more</a>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
