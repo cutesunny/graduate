@@ -30,6 +30,8 @@ $(function(){
             ' <p>吴宋永红1966年生于河北省曲阳县1988年毕业于浙江美术学院版画系（现为中国美术学院）。</p>' +
             ' <a href="ddsh-details1.html">View more</a> </figcaption></figure>' +
             '</div>');
+
+
 		return;
 	}
 	//获取幻灯片数据
@@ -42,93 +44,95 @@ $(function(){
 			if(response.code === 200){
 				setSliderImage(response.data);
 			}else{
-				layer.alert('加载幻灯片数据失败', {icon: 2});
+				layer.alert('加载轮播图数据失败', {icon: 2});
 			}
 		},
 		error:function(){
-			
+            layer.alert('加载轮播图数据失败', {icon: 2});
 		}
 	});
-	//获取传奇书画数据
+	//获取书法数据
 	$.ajax({
-		url:baseUrl+'/api/image?type=1&offset=0&limit=6',
+		url:baseUrl+'/api/calligraphy?pageNum=1&pageSize=6',
 		method:'get',
 		dataType:'json',
 		success:function(response){
-			if(response.status === 200){
-				setCqshData(response.data);
+			if(response.code === 200){
+				setCalligraphyData(response.data);
 			}else{
-				
+                layer.alert('加载书法数据失败', {icon: 2});
 			}
 		},
 		error:function(){
-			
+            layer.alert('加载书法数据失败', {icon: 2});
 		}
 	});
-	//获取当代书画数据
+	//获取绘画数据
 	$.ajax({
-		url:baseUrl+'/api/image?type=2&offset=0&limit=3',
+		url:baseUrl+'/api/painting?pageNum=1&limit=3',
 		method:'get',
 		dataType:'json',
 		success:function(response){
-			if(response.status === 200){
-				setDdshData(response.data);
+			if(response.code === 200){
+				setPaintingData(response.data);
 			}else{
-				
+                layer.alert('加载绘画数据失败', {icon: 2});
 			}
 		},
 		error:function(){
-			
+            layer.alert('加载绘画数据失败', {icon: 2});
 		}
 	});
 	//获取展厅数据
 	$.ajax({
-		url:baseUrl+'/api/gallery?offset=0&limit=5',
+		url:baseUrl+'/api/article?type=1&pageNum=1&limit=5',
 		method:'get',
 		dataType:'json',
 		success:function(response){
-			if(response.status === 200){
+			if(response.code === 200){
 				setGalleryData(response.data);
 			}else{
-				
+                layer.alert('获取展厅数据失败', {icon: 2});
 			}
 		},
 		error:function(){
-			
+            layer.alert('获取展厅数据失败', {icon: 2});
 		}
 	});
-	//获取展厅数据
-	$.ajax({
-		url:baseUrl+'/api/gallery?offset=0&limit=5',
-		method:'get',
-		dataType:'json',
-		success:function(response){
-			if(response.status === 200){
-				setGalleryData(response.data);
-			}else{
-				
-			}
-		},
-		error:function(){
-			
-		}
-	});
+
 	//获取竞拍数据
-	$.ajax({
-		url:baseUrl+'/api/auction?offset=0&limit=8',
-		method:'get',
-		dataType:'json',
-		success:function(response){
-			if(response.status === 200){
-				setAuctionData(response.data);
-			}else{
-				
-			}
-		},
-		error:function(){
-			
-		}
-	});
+    $.ajax({
+        url:baseUrl+'/api/auction?offset=0&limit=8',
+        method:'get',
+        dataType:'json',
+        success:function(response){
+            if(response.code === 200){
+                setAuctionData(response.data);
+            }else{
+                layer.alert('获取竞拍数据失败', {icon: 2});
+            }
+        },
+        error:function(){
+            layer.alert('获取竞拍数据失败', {icon: 2});
+        }
+    });
+
+    //获取新闻数据
+    $.ajax({
+        url:baseUrl+'/api/article?type=2&pageNum=1&limit=2',
+        method:'get',
+        dataType:'json',
+        success:function(response){
+            if(response.code === 200){
+                setNewsData(response.data);
+            }else{
+                layer.alert('获取新闻数据失败', {icon: 2});
+            }
+        },
+        error:function(){
+            layer.alert('获取新闻数据失败', {icon: 2});
+        }
+    });
 });
 /**
  * 置幻灯片数据
@@ -145,27 +149,44 @@ function setSliderImage(sliderList){
 	}
 }
 /**
- * 置传奇书画数据
+ * 置书法数据
  */
  
-function setCqshData(datas){
-	 
+function setCalligraphyData(dataList){
+	 $('[name="calligraphy_title"]').each(function(index, obj){
+	 	$(obj).html(dataList[index].title);
+	 	$($('[name="calligraphy_path"]')[index]).attr('src', dataList[index].path);
+	 	$($('[name="calligraphy_description"]')[index]).html(dataList[index].description);
+	 	//$($('[name="calligraphy_url"]')[index]).html('/calligraphy?id='+dataList[index].id);
+	 });
 }
  
 /**
  * 置当代书画数据
  */
  
-function setDdshData(datas){
-	 
+function setPaintingData(dataList){
+    for(let i = 0; i < dataList.length; i++){
+        $('#contemporary_painting').append('<div class="col-lg-4"> <figure class="effect-roxy">' +
+            ' 	<img src="'+dataList[i].path+'" alt="part2-wudayu.jpg" />' +
+            ' <figcaption><h2>'+dataList[i].title+'</h2>' +
+            ' <p>'+dataList[i].description+'</p>' +
+            ' <a href="/painting/'+dataList[i].id+'">View more</a> </figcaption></figure>' +
+            '</div>');
+    }
 }
 
 /**
  * 置展厅数据
  */
  
-function setGalleryData(datas){
-	 
+function setGalleryData(dataList){
+    $('[name="gallery_title"]').each(function(index, obj){
+        $(obj).html(dataList[index].title);
+        $($('[name="gallery_thumb"]')[index]).attr('src', dataList[index].path);
+        $($('[name="gallery_description"]')[index]).html(dataList[index].description);
+        //$($('[name="gallery_url"]')[index]).html('/article?id='+dataList[index].id);
+    });
 }
 /**
  * 竞拍数据
@@ -178,6 +199,6 @@ function setAuctionData(datas){
  * 置新闻数据
  */
  
-function setNewsData(datas){
+function setNewsData(dataList){
 	 
 }
