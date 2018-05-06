@@ -200,5 +200,9 @@ function setAuctionData(datas){
  */
  
 function setNewsData(dataList){
-	 
+    $('[name="news_thumb"]').each(function(index, obj){
+        $(obj).html(dataList[index].thumb);
+        $($('[name="news_title"]')[index]).attr('src', dataList[index].title);
+        //$($('[name="news_url"]')[index]).html('/article?id='+dataList[index].id);
+    });
 }
